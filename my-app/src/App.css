@@ -1,38 +1,15 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family:"Source San Pro";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root {
+  --navy: rgb(72;98;144);
+  --midBlue: rgb(39;170;225);
+  --black: rgb(0;0;0);
+  --greyBlue:rgb(106;138;175);
+  --offWhite: rgb(226;232;221);
+  --warmTaupe: rgb(205;198;174);
 }
