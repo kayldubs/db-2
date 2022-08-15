@@ -3,15 +3,14 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 //import components(pages to then insert into the return JXS function)
-//import Home from './components/Home';
 import Nav from './components/Nav';
 import Features from './components/Features';
-// import ContactForm from './components/Contact';
 import Form from './components/Contact/Form';
 import ImageSlider from './components/Slider-2/ImageSlider';
 import { SliderData } from './components/Slider-2/SliderData';
 import ImageHero from './components/Carousel/ImageHero';
 import { HeroData } from './components/Carousel/HeroData';
+
 import Faq from './components/FAQ/Faq.js';
 import About from './components/About/about';
 // import Payer from './components/Payer';
