@@ -16,6 +16,8 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import CardHeader from '@mui/material/CardHeader';
 import { useState } from 'react';
+//import animation framework 
+import { motion } from "framer-motion";
 
 //MUI Icons
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -67,7 +69,7 @@ const tiers = [
 const theme = createTheme();
 
 export default function About() {
-    // const [isHovering, setIsHovering] = useState(false);
+    const [isHovering, setIsHovering] = useState(false);
 
     return (
         <ThemeProvider theme={theme}>
@@ -202,8 +204,9 @@ export default function About() {
                                         image={winston}
                                         alt="random"
                                         className='win1'
-                                        // onMouseEnter={() => setIsHovering(true)}
-                                        // onMouseLeave={() => setIsHovering(false)}
+                                        onMouseEnter={() => setIsHovering(true)}
+                                        onMouseLeave={() => setIsHovering(false)}
+                                        
                                     />
                                     <CardContent sx={{ flexGrow: 1 }}>
                                         <Typography variant="h5" component="h2">

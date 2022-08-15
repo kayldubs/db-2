@@ -1,5 +1,5 @@
 .bottomEmployees {
-    position: relative;
+    position:relative;
     top: 50px;
     margin-bottom: 50px;
 
@@ -17,7 +17,7 @@
     flex-direction: column;
 } 
 
-.karl {
+/* .karl {
     position: absolute;
 }
 
@@ -46,29 +46,29 @@
     opacity: 1;
 }
 
-.cliff1 {
+/* .cliff1 {
     display: hidden;
     
-}
+} */
 
-.cliff2 {
+/* .cliff2 {
     position: relative;
     margin-right: 200px;
     opacity: 0;
     transition: opacity .25s;
     padding-top: 20px;
 
-}
+} */
 
-.cliff2:hover {
+/* .cliff2:hover {
     opacity: 1;
-}
+} */
 
-.win {
+/* .win {
     position: absolute;
-}
+} */
 
-.win1 {
+/* .win1 {
     display: hidden;
 }
 
@@ -83,6 +83,6 @@
 
 .win2:hover {
     opacity: 1;
-}
+} */
 
 
