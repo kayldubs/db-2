@@ -1,0 +1,21 @@
+.footer {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    float:right;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+

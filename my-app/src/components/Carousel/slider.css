@@ -1,0 +1,129 @@
+.content {
+    position: absolute;
+    top: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    width: 30%;
+    margin-left: 55px;
+    padding: 1rem;
+    background: rgba(238, 229, 233, 0.9);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #C1C1C1;
+    animation: slide-up 1s ease 0.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes slide-up {
+    0% {
+        visibility:visible;
+        top: 23rem;
+    }
+    100% {
+        visibility: visible;
+        top: 17rem;
+    }
+    
+}
+
+.content > * {
+    color: #486290;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+}
+
+.current {
+    opacity: 1;
+}
+
+.current .content {
+    opacity: 1;
+}
+
+hr {
+    height: 5px;
+    color: #CDC6AE;
+    width: 40%;
+}
+
+/** top text edit**/
+
+.top-content {
+    font-weight: bolder;
+    font-size: 48px;
+    color: #27AAE1;
+    margin: 1rem;
+    animation: fadeIn 2s; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hero-icons {
+    position: relative;
+    padding-top: 50px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -170px;
+    margin-bottom:10px;
+    border-radius: 5px;
+  
+  }
+
+.text-hero {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight:bolder;
+    font-size: 16px;
+    padding: 3rem;
+    margin-bottom: 0px;
+  }
+
+  .hero-image {
+    width: 1400px;
+    height: 750px;
+    border-radius: 23px;
+    transition: all 0.5s ease;
+    display: flex;
+   justify-content: center;
+   animation: fadeIn 2s; 
+   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  
+  }
+
+  .buttons {
+      position: relative;
+      flex:auto;
+      flex-direction:row;
+      color: #d6d6d6;
+      top: -250px;
+      right: -745px;
+      
+  }
+
+  .right-button {
+      margin-left: 50px;
+  }
+
+  .tag {
+      text-align: left;
+      padding: none;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .everything {
+      height: 1100px;
+  }
+

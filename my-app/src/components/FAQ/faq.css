@@ -1,0 +1,35 @@
+
+.top-box {
+    background-color: '#dbf1fa';
+}
+
+.header-text {
+    font-size: 36px;
+    font-family: Expletus Sans;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    margin-top: 3rem;
+    padding: 3rem;
+    color: '#6a8aaf';
+}
+
+.questions-section {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    padding: 3rem;
+}
+
+.question {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+.answer {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    text-align: left;
+}

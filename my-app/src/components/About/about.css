@@ -1,0 +1,88 @@
+.bottomEmployees {
+    position: relative;
+    top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.aboutEm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+} 
+
+.karl {
+    position: absolute;
+}
+
+.karl1 {
+    display: hidden;
+}
+
+.karl2 {
+    position: relative;
+    margin-right: 200px;
+    opacity: 0;
+    transition: opacity .25s;
+    padding-top: 20px;
+    
+
+}
+.karl1:hover ~ .karl2 {
+    position: relative;
+    margin-right: 200px;
+    opacity: 0;
+    transition: opacity .25s;
+    padding-top: 20px;
+    
+}
+.karl2:hover {
+    opacity: 1;
+}
+
+.cliff1 {
+    display: hidden;
+    
+}
+
+.cliff2 {
+    position: relative;
+    margin-right: 200px;
+    opacity: 0;
+    transition: opacity .25s;
+    padding-top: 20px;
+
+}
+
+.cliff2:hover {
+    opacity: 1;
+}
+
+.win {
+    position: absolute;
+}
+
+.win1 {
+    display: hidden;
+}
+
+.win2 {
+    position: relative;
+    margin-right: 200px;
+    opacity: 0;
+    transition: opacity .25s;
+    padding-top: 10px;
+
+}
+
+.win2:hover {
+    opacity: 1;
+}
+
+
