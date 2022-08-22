@@ -49,6 +49,7 @@ function Features() {
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={IMG}
+              className='imageDecoration'
             />
           </div>
           <div className='media2' class='col-lg-6 flex-row'>
@@ -73,6 +74,7 @@ function Features() {
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={IMG2}
+              className='imageDecoration'
             />
           </div>
           </Card>
@@ -83,6 +85,7 @@ function Features() {
               component="img"
               alt="heart with connections to DigiBeat Logo"
               image={IMG3}
+              className='imageDecoration'
             />
           </div>
           <div className='media2' class='col-lg-6 flex-row'>
