@@ -6,8 +6,15 @@ import './slider.css';
 
 
 const ImageHero = ({ slides }) => {
-    const [current, setCurrent] = useState(0)
-    const length = slides.length;
+
+
+    const [current, setCurrent] = useState([])
+    
+     const length = slides.length;
+
+   
+
+    // const { activeSlide, _slides } = current
 
     const autoScroll = true;
     let slideInterval;
@@ -25,14 +32,18 @@ const ImageHero = ({ slides }) => {
     }, [current])
 
     const nextSlide = () => {
-        setCurrent(current === length - 1 ? 0 : current + 1);
+        setCurrent(current === length -1 ? 0 : current +1)
     };
 
-    const prevSlide = () => {
-        setCurrent(current === 0 ? length - 1 : current - 1);
-    };
+    // const prevSlide = () => {
+    //     setCurrent(current === 0 ? length - 1 : current - 1);
+    // };
     if (!Array.isArray(slides) || slides.length <= 0) {
         return null;
+    }
+
+    const goToSlide = slideIndex => {
+        setCurrent(slideIndex)
     }
 
     return (
@@ -66,11 +77,6 @@ const ImageHero = ({ slides }) => {
                                         <hr></hr>
                                         <p className='tag'>{pictures.desc}</p>
                                     </div>
-                                    {/* <div className='content2'>
-                                        <h2>{pictures.heading2}</h2>
-                                        <hr></hr>
-                                        <p className='tag'>{pictures.desc2}</p>
-                                    </div> */}
                                 </div>
                             )}
                         </div>
@@ -78,9 +84,9 @@ const ImageHero = ({ slides }) => {
                 })}
             </div>
             <div className='buttons'>
-                <BsDashLg className='left-button' onClick={prevSlide} size={70} />
-                <BsDashLg className='right-button' onClick={nextSlide} size={70}/>
-                {/* <BsDashLg className='center-arrow' onClick={nextSlide} size={70} /> */}
+                 {slides.map((slides, slideIndex) => (
+                    <BsDashLg key={slideIndex} className='buttons-style' size={90} onClick={() => goToSlide(slideIndex)}/>
+                ))}
                 </div>
         </div>
     )

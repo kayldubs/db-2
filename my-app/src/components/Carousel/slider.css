@@ -92,7 +92,7 @@ hr {
 
   .hero-image {
     width: 1400px;
-    height: 750px;
+    height: 700px;
     border-radius: 23px;
     transition: all 0.5s ease;
     display: flex;
@@ -103,19 +103,23 @@ hr {
   }
 
   .buttons {
-      position: relative;
-      flex:auto;
-      flex-direction:row;
-      color: #d6d6d6;
-      top: -250px;
-      right: -745px;
-      
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      justify-content: center;
+      top: 1120px;
+      right: 665px;
   }
 
-  .right-button {
-      margin-left: 50px;
+  .buttons-style {
+      padding: 10px;
+      color: #81CDEE;
   }
 
+  .buttons-style :hover {
+      color: #486290;
+      cursor:pointer;
+  }
   .tag {
       text-align: left;
       padding: none;
