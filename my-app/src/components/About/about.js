@@ -71,6 +71,20 @@ const theme = createTheme();
 
 export default function About() {
     const [isHovering, setIsHovering] = useState(false);
+    
+
+    const handleMouseOver = e => {
+            
+            setIsHovering(true);
+            
+    }
+        
+    
+
+    const handleMouseOut = e => {
+        
+        setIsHovering(false);
+    }
 
     return (
         <ThemeProvider theme={theme}>
@@ -183,109 +197,6 @@ export default function About() {
                         </Container>
                     </React.Fragment>
                 </Box>
-                <Container sx={{ py: 8 }} maxWidth="md">
-                    {/* End hero unit */}
-                    {/* Start the team page */}
-                    <Typography variant="h2" align="center">Meet The Team</Typography>
-                    <Grid container alignItems="flex-start" justifyContent='space-evenly'>
-                            <Grid class='row'>
-                                <Card  class='col-lg-4'>
-                                    <CardMedia
-                                        component="img"
-                                         sx={{
-                                        //     // 16:9
-                                            pt: '50%',
-                                            mr: '100%'
-                                         }}
-                                        image={winston}
-                                        alt="random"
-                                        className='win1'
-                                        onMouseEnter={() => setIsHovering(true)}
-                                        onMouseLeave={() => setIsHovering(false)}
-                                        
-                                    />
-                                    <CardContent sx={{ flexGrow: 1 }}>
-                                        <Typography variant="h5" component="h2">
-                                           Winston T. Richards, MD
-                                        </Typography>
-                                        <Typography>CMO</Typography>
-                                        {isHovering && (
-                                        <Typography className='win2'>
-                                        Trauma Surgeon located in the North Central Florida area with a background in medicine and applied mathematics. As the founder and CEO, Winston has seen through the development of the Digibeat Electronic Stethoscope from its original prototype developed in Winston’s garage.
-                                        </Typography>
-                                         )} 
-                                    </CardContent>
-                                </Card>
-                                <Card class='col-lg-4' className='cliff'>
-                                    <CardMedia
-                                        component="img"
-                                         sx={{
-                                        //     // 16:9
-                                             pt: '50%',
-                                         }}
-                                        image={cliff}
-                                        alt="random"
-                                        className='cliff1'
-                                        onMouseEnter={() => setIsHovering(true)}
-                                        onMouseLeave={() => setIsHovering(false)}
-                                    />
-                                    <CardContent sx={{ flexGrow: 1 }}>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                          Clifford Steele
-                                        </Typography>
-                                        <Typography>CEO</Typography>
-                                        {isHovering && (
-                                        <Typography className='cliff2'>
-                                        Cliff has a background in Aeronautical, Aerospace and Astronautical Engineering from Embry-Riddle Aeronautical University. He focuses on project organization while being the brains behind the engineering that goes into developing the Digibeat Electronic Stethoscope.
-                                        </Typography>
-                                        )}
-                                    </CardContent>
-                                </Card>
-                                <Card class='col-lg-4' className='karl'>
-                                    <CardMedia
-                                        component="img"
-                                        sx={{
-                                            // 16:9
-                                            pt: '50%',
-                                            //  pl: '20%',
-                                             
-                                            //  pt: '50%',
-                                        }}
-                                        image={karll}
-                                        alt="random"
-                                        className='karl1'
-                                        onMouseEnter={() => setIsHovering(true)}
-                                        onMouseLeave={() => setIsHovering(false)}
-                                    />
-                                    <CardContent sx={{ flexGrow: 1 }}>
-                                        <Typography gutterBottom variant="h5" component="h2" 
-                                        // paddingLeft='25%' 
-                                        >
-                                          Karl Dockendorf
-                                        </Typography>
-                                        <Typography>CTO</Typography>
-                                        {isHovering && (
-                                        <Typography className='karl2'>
-                                        Karl earned his BS and ME in electrical and computer engineering followed by a Ph.D. in biomedical engineering (neural engineering focus) from the University of Florida.  Karl is well versed in the design of computer hardware, intelligent information processing, machine learning, and adaptation of neuronal networks.  
-                                        </Typography>
-                                        )}
-                                    </CardContent>
-                                </Card>
-                                <Card className='bottomEmployees'>
-                                    <CardContent  className='aboutEm' class='row'>
-                                        <div class='col-lg-6'>
-                                        <Typography>Arash Samimi - Regulatory/Quality Engineer</Typography>
-                                        <Typography>Calvin Bond - Electrical/Mechanical Engineer</Typography>
-                                        </div>
-                                        <div className='column2' class='col-lg-6'>
-                                        <Typography>Brandon Popp - Systems Analyst/IT</Typography>
-                                        <Typography>Kaylee Stevens - Graphic Designer/Developer</Typography>
-                                        </div>
-                                    </CardContent>
-                                </Card>
-                            </Grid>
-                    </Grid>
-                </Container>
             </main>
         </ThemeProvider>
     );

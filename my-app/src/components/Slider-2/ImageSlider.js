@@ -70,7 +70,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 
     return (
     <section className='row'>
-        <h1 className={classes.featureCard}>The future of medical examinations</h1>
+        <h1 className={classes.featureCard}>The Future of Medical Examinations</h1>
       <Card varient="outlined" className='col-lg-6 info-plane'>
         
         <div className={classes.featureSubtext}>

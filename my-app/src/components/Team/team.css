@@ -1,0 +1,47 @@
+.positioning {
+    display: flex;
+    position: relative;
+    justify-content:flex-start;
+    left: -400px;
+
+}
+
+.positioning2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -610px;
+}
+
+.positioning3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top: -1215px;
+    right: -500px;
+}
+
+.bottomEmployees {
+    position:relative;
+    top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.aboutEm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.win1 {
+    height: 400px;
+    width:300px;
+}
+

@@ -16,6 +16,9 @@ import About from './components/About/about';
 // import Payer from './components/Payer';
 // import Physician from './components/Physician';
 import Footer from './components/Footer';
+import Team from './components/Team/Team';
+import Team2 from './components/Team2/Team2.js';
+import Team3 from './components/Team3/Team3.js';
 
 //import CSS Boostrap 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -96,7 +99,11 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
             {/* <Route exact path="/Payer" component={Payer} /> */}
             {/* <Route exact path="/Physician" component={Physician} /> */}
             <Route exact path="/faq"> <Faq/> </Route>
-            <Route exact path="/about"> <About/> </Route>
+            <Route exact path="/about"> <About/>
+            <Team />
+            <Team2 />
+            <Team3 />
+            </Route>
             </Switch>
           <Footer />
         {/* </Provider> */}
