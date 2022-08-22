@@ -6,15 +6,7 @@ import './slider.css';
 
 
 const ImageHero = ({ slides }) => {
-
-
-    const [current, setCurrent] = useState([])
-    
-     const length = slides.length;
-
-   
-
-    // const { activeSlide, _slides } = current
+    const [current, setCurrent] = useState(0);
 
     const autoScroll = true;
     let slideInterval;
@@ -27,23 +19,25 @@ const ImageHero = ({ slides }) => {
     useEffect(() => {
         if (autoScroll) {
             auto()
-        } 
+        }
         return () => clearInterval(slideInterval)
     }, [current])
 
     const nextSlide = () => {
-        setCurrent(current === length -1 ? 0 : current +1)
+        const isLastSlide = current === slides.length - 1;
+        const newCurrent = isLastSlide ? 0 : current + 1;
+        setCurrent(newCurrent)
     };
 
     // const prevSlide = () => {
     //     setCurrent(current === 0 ? length - 1 : current - 1);
     // };
-    // if (!Array.isArray(slides) || slides.length <= 0) {
-    //     return null;
-    // }
+    if (!Array.isArray(slides) || slides.length <= 0) {
+        return;
+    }
 
     const goToSlide = slideIndex => {
-        setCurrent(slideIndex)
+        setCurrent(slideIndex);
     }
 
     return (
@@ -53,15 +47,16 @@ const ImageHero = ({ slides }) => {
                 {HeroData.map((header, index) => {
                     return (
                         <div className={index === current ? 'text active' : 'text'} key={index}>
-                        {index === current && (
-                            <div className='top-content'>
-                                <h2>{header.header}</h2>
-                            </div>
-                        )}
-                    </div>
-                )},
+                            {index === current && (
+                                <div className='top-content'>
+                                    <h2>{header.header}</h2>
+                                </div>
+                            )}
+                        </div>
+                    )
+                },
                 )
-                    }
+                }
                 <h1>Electronic Stethoscope</h1>
 
             </div>
@@ -84,10 +79,10 @@ const ImageHero = ({ slides }) => {
                 })}
             </div>
             <div className='buttons'>
-                 {slides.map((slides, slideIndex) => (
-                    <BsDashLg key={slideIndex} className='buttons-style' size={90} onClick={() => goToSlide(slideIndex)}/>
+                {slides.map((slides, slideIndex) => (
+                    <BsDashLg key={slideIndex} className='buttons-style' size={90} onClick={() => goToSlide(slideIndex)} />
                 ))}
-                </div>
+            </div>
         </div>
     )
 };

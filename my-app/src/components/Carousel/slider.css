@@ -105,10 +105,10 @@ hr {
   .buttons {
       display: flex;
       flex-direction: row;
-      position: absolute;
+      position: relative;
       justify-content: center;
-      top: 1120px;
-      right: 665px;
+      top:-250px;
+      /* right: 0px; */
   }
 
   .buttons-style {
