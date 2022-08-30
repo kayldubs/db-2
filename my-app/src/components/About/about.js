@@ -90,7 +90,7 @@ export default function About() {
                             spacing={2}
                             justifyContent="center"
                         >
-                            <Button variant="contained">Main call to action</Button>
+                            {/* <Button variant="contained">Our Blog</Button> */}
                             <a href='/faq' style={{textDecoration:'none'}}>
                             <Button variant="outlined">FAQ</Button>
                             </a>

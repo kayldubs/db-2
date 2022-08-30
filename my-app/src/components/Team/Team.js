@@ -62,10 +62,10 @@ export default function Team() {
                             }}
                         />
                         <CardContent >
-                            <Typography variant="h5" component="h2">
+                            <Typography variant="h5" component="h2" align='center'>
                                 Winston T. Richards, MD
                             </Typography>
-                            <Typography>CMO</Typography>
+                            <Typography align='center'>CMO</Typography>
                             {isHovering && (
                                 <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px'}}>
                                     Trauma Surgeon located in the North Central Florida area with a background in medicine and applied mathematics. As the founder and CEO, Winston has seen through the development of the Digibeat Electronic Stethoscope from its original prototype developed in Winston’s garage.

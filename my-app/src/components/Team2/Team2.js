@@ -50,10 +50,10 @@ export default function Team2() {
                             }}
                         />
                         <CardContent >
-                            <Typography variant="h5" component="h2">
+                            <Typography variant="h5" component="h2" align='center'>
                                 Clifford Steele
                             </Typography>
-                            <Typography>CEO</Typography>
+                            <Typography align='center'>CEO</Typography>
                             {isHovering && (
                                 <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px'}}>
                                     Cliff has a background in Aeronautical, Aerospace and Astronautical Engineering from Embry-Riddle Aeronautical University. He focuses on project organization while being the brains behind the engineering that goes into developing the Digibeat Electronic Stethoscope.

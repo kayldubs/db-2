@@ -43,7 +43,7 @@ export default function Team3() {
             <Grid container style={{
                 position: 'relative',
                 top: '-270px',
-                right: '-560px',
+                right: '-555px',
                 flexWrap:'nowrap'
             }}>
                     <Card class='col-3-lg'>
@@ -60,10 +60,10 @@ export default function Team3() {
                             }}
                         />
                         <CardContent >
-                            <Typography variant="h5" component="h2">
+                            <Typography variant="h5" component="h2" align='center'>
                                 Karl Dockendorf
                             </Typography>
-                            <Typography>CTO</Typography>
+                            <Typography align='center'>CTO</Typography>
                             {isHovering && (
                                 <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px'}}>
                                     Karl earned his BS and ME in electrical and computer engineering followed by a Ph.D. in biomedical engineering (neural engineering focus) from the University of Florida.  Karl is well versed in the design of computer hardware, intelligent information processing, machine learning, and adaptation of neuronal networks.
