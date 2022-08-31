@@ -30,20 +30,20 @@ function Featured() {
         marginBottom: '200px',
         alignItems: 'stretch',
     }} >
-        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#6a8aaf' }} 
+        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }} 
         style={{backgroundColor:'#d6d6d6', width:'300px'}} 
         >
           <CardContent sx={{ flex: 1 }}>
           <EngineeringRoundedIcon sx={{
             fontSize:40,
             marginLeft:'115px',
-            backgroundColor:'#6a8aaf',
+            backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
             top:'-20px'
 
           }}/>
-            <Typography component="h2" variant="h5">
+            <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
               
               Arash Samimi
             </Typography>
@@ -52,17 +52,17 @@ function Featured() {
             </Typography>
             </CardContent>
         </Card>
-        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#6a8aaf' }}>
+        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }}>
         <CardContent sx={{ flex: 1 }} style={{backgroundColor:'#d6d6d6', width:'300px'}} >
         <PrecisionManufacturingIcon sx={{
             fontSize:40,
             marginLeft:'115px',
-            backgroundColor:'#6a8aaf',
+            backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
             top:'-20px'
           }}/>
-            <Typography component="h2" variant="h5">
+            <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
             Calvin Bond
             </Typography>
             <Typography variant="subtitle1" color="text.secondary">
@@ -70,17 +70,17 @@ function Featured() {
             </Typography>
         </CardContent>
         </Card>
-        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#6a8aaf' }}> 
+        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }}> 
         <CardContent sx={{ flex: 1 }} style={{backgroundColor:'#d6d6d6', width:'300px'}}>
         <InsightsIcon sx={{
             fontSize:40,
             marginLeft:'115px',
-            backgroundColor:'#6a8aaf',
+            backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
             top:'-20px'
           }}/>
-            <Typography component="h2" variant="h5">
+            <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
             Brandon Popp
             </Typography>
             <Typography variant="subtitle1" color="text.secondary">
@@ -91,21 +91,21 @@ function Featured() {
         <Card 
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
-            sx={{ display: 'flex', outline:'solid', outlineColor:'#6a8aaf' }}>
+            sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }}>
         <CardContent sx={{ flex: 1 }} style={{backgroundColor:'#d6d6d6', width:'300px'}}>
         <DesignServicesIcon sx={{
             fontSize:40,
             marginLeft:'115px',
-            backgroundColor:'#6a8aaf',
+            backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
             top:'-20px',
           }}/>
-            <Typography component="h2" variant="h5">
+            <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
             Kaylee Stevens
             </Typography>
             <Typography variant="subtitle1" color="text.secondary">
-            Graphic Designer/Front End Developer
+            Graphic Designer/Developer
             </Typography>
             {isHovering && (
             <Typography variant="subtitle2" color="text.secondary">

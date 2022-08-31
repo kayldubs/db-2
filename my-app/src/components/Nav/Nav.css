@@ -49,17 +49,18 @@ ul {
 }
 
 .fa-bars {
-    color: #27aae1;
+    color: #81cdee;
 }
 
 .menu-icon {
     display: none;
 }
 
+
 /* start media queries*/
 
-@media screen and (max-width: 756px) {
-    NavItems {
+@media screen and (max-width: 960px) {
+    .NavItems {
         position: relative;
     }
 
@@ -67,16 +68,16 @@ ul {
         display: felx;
         flex-direction: column;
         width: 100%;
-        height: 500px;
+        height: 150px;
         position: absolute;
-        top: 80px;
+        top: 150px;
         left: -100%;
-        opacity: -1;
+        opacity: 1;
         transition: all 0.5s ease;
     }
 
     .nav-menu.active {
-        background: #27aae1;
+        background: #b3e1f5;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
@@ -86,34 +87,30 @@ ul {
     .nav-links {
         text-align: center;
         padding: 2rem;
-        width: 100%;
+        margin: auto;
         display: table;
+        justify-content: space-evenly;
+        color: #305074;
+        align-items: stretch;
     }
 
     .nav-links:hover {
-        background-color:#C1C1C1;
-        border-radius: 0;
+        background-color:#fff;
+        opacity: 60%;
+        border-radius: 20px;
+        align-items: stretch;
     }
 
     .navbar-logo {
-        position: absolute;
-        top:0;
-        left:0;
-        transform: translate(25%, 50%);
-    }
-
-    .menu-icon {
-        display: block;
-        position:absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
+        position: relative;
+        display: flex;
+        left: -100px;
     }
     
     .menu-icon {
         display: block;
         position: absolute;
-        top: 0;
+        top: 20%;
         right: 0;
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
