@@ -9,6 +9,6 @@ export const SliderData = [
         image:"https://i.ibb.co/rKhmtLW/DB-3.png" 
     },
     {
-        image:"https://i.ibb.co/gDp0fM8/DB-4.png" 
+        image:"https://i.ibb.co/DCZP6Q2/DB-4.png"
     }
 ];

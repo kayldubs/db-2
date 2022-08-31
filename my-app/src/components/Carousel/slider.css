@@ -131,3 +131,87 @@ hr {
       height: 1100px;
   }
 
+  /* media queries start */
+
+  @media screen and (max-width: 480px) {
+    .text-hero {
+        margin-top: 100px;
+    }
+
+    .hero-image {
+        margin-top: 100px;
+        min-width: 200px;
+        min-height: 100px; 
+    }
+
+    .content {
+      width: 400px;
+      transform: translate(-63.5%, -50%);
+      margin-top: 50px;
+    }
+
+    .buttons{
+        top: -20px;
+    }
+}
+
+  @media screen and (max-width: 960px) {
+      .text-hero {
+          margin-top: 100px;
+      }
+
+      .hero-image {
+          max-width: 700px;
+          max-height: 400px;
+          transform: translate(-63.5%, 0%);
+      }
+
+      .content {
+        max-width: 250px;
+        max-height: 350px;
+        transform: translate(-10%, -20%);
+        margin-top: 30px;
+        font-size: 12px;
+      }
+
+      .buttons{
+          top: 250px;
+      }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .content {
+        width: 400px;
+      }
+
+      .buttons {
+          top: -350px;
+      }
+
+      .hero-image {
+        
+        transform: translate(0%, -10%);
+        width: 1000px;
+        height: 500px;
+      }
+}
+
+@media screen and (min-width: 1600px) {
+    .content {
+        width: 400px;
+        /* transform: translate(-63.5%, -50%); */
+        margin-top: 50px;
+      }
+
+      .buttons {
+          top: -250px;
+      }
+
+      .hero-image {
+        /* transform: translate(0%, 5%); */
+        width: 1400px;
+        height: 700px;
+      }
+}
+
+

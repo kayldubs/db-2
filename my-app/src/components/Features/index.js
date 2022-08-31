@@ -64,7 +64,7 @@ function Features() {
           <Card className='cardPositions4' class='row'>
           <div class='col-lg-6 copy'>
             <h1 className='title2'>Digital Stethoscope</h1>
-            <h2 className='subTitle'>Revolutionize your practice with the DB1 Digital stethoscope. DB1 fits advanced asculation technology in the palm of your hand using our 6 layer PCBA architecture.</h2>
+            <h2 className='subTitle'>Revolutionize your practice with the DigiBeat Electronic Stethoscope. The DigiBeat Electronic Stethoscope fits advanced asculation technology in the palm of your hand using our 6 layer PCBA architecture.</h2>
             <p className='ptag'>• Listen wirelessly with your preferred headphones or provided USB-C headphones.</p>
             <p className='ptag'>• Collect valuable patient biometric data in a method unattainable by traditional stethoscopes.</p>
             <p className='ptag'>• Evaluate patients more quickly than ever with a clinically improved exam workflow.</p>
