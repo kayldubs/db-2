@@ -132,3 +132,85 @@ hr {
   }
 
   /* media queries start */
+
+  @media screen and (max-width: 480px) {
+    .text-hero {
+        margin-top: 150px;
+    }
+
+    .hero-image {
+        /* margin-top: 100px;
+        width:500px;
+        height: 350px; */
+        display: none;
+    }
+
+    .content {
+      width: 400px;
+      transform: translate(-63.5%, -50%);
+      margin-top: 50px;
+    }
+
+    .buttons{
+        top: -20px;
+    }
+}
+
+  @media screen and (max-width: 960px) {
+      .text-hero {
+          margin-top: 150px;
+      }
+
+      .hero-image {
+          /* margin-top: 100px;
+          width:500px;
+          height: 350px; */
+          display: none;
+      }
+
+      .content {
+        width: 400px;
+        transform: translate(-63.5%, -50%);
+        margin-top: 50px;
+      }
+
+      .buttons{
+          top: -450px;
+      }
+  }
+
+@media screen and (max-width: 1600px) {
+    .content {
+        width: 400px;
+        /* transform: translate(-63.5%, -50%); */
+        margin-top: 50px;
+      }
+
+      .buttons {
+          top: -150px;
+      }
+
+      .hero-image {
+        transform: translate(0%, 10%);
+        width: 1200px;
+        height: 600px;
+      }
+}
+
+@media screen and (max-width: 1300px) {
+    .content {
+        width: 400px;
+        /* transform: translate(-63.5%, -50%); */
+        margin-top: 50px;
+      }
+
+      .buttons {
+          top: -350px;
+      }
+
+      .hero-image {
+        transform: translate(0%, -10%);
+        width: 1000px;
+        height: 500px;
+      }
+}
