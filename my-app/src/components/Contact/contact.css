@@ -124,24 +124,20 @@
 
   /* start media queries */
 
-@media screen and (max-width: 960) {
-  .form-coontact-right {
-    max-width: 480px;
-  }
-  .form-img {
-    max-width: 240px;
-  }
-  .form {
-    /* position: absolute; */
-    /* top: 50%;
-    left: 75%; */
-    transform: translate(-25%, -25%);
-    width: 25%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 10px 10px 0;
-  }
+@media screen and (max-width: 960px) {
+ .form-container {
+   height: 600px;
+   width: 400px;
+   background: #d6d6d6;
+ }
+
+ .form-img {
+  display: none;
+ }
+
+ .form {
+   width: 100%;
+   height: 30%;
+   left: 50%;
+ }
 }

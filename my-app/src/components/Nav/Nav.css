@@ -59,6 +59,18 @@ ul {
 
 /* start media queries*/
 
+@media screen and (max-width: 480px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        transform: translate(-100%, 40%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .NavItems {
         position: relative;

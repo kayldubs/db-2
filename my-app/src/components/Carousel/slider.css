@@ -138,15 +138,9 @@ hr {
         margin-top: 100px;
     }
 
-    .hero-image {
-        margin-top: 100px;
-        min-width: 200px;
-        min-height: 100px; 
-    }
-
     .content {
       width: 400px;
-      transform: translate(-63.5%, -50%);
+      transform: translate(-100%, -30%);
       margin-top: 50px;
     }
 
@@ -161,15 +155,15 @@ hr {
       }
 
       .hero-image {
-          max-width: 700px;
-          max-height: 400px;
-          transform: translate(-63.5%, 0%);
+          max-width: 480px;
+          max-height: 250px;
+          margin-top: 250px;
       }
 
       .content {
-        max-width: 250px;
-        max-height: 350px;
-        transform: translate(-10%, -20%);
+        max-width: 450px;
+        max-height: 250px;
+        transform: translate(-2%, -70%);
         margin-top: 30px;
         font-size: 12px;
       }
