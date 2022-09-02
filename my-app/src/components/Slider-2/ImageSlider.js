@@ -4,7 +4,7 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 //Material UI Imports 
 
 import Card from '@mui/material/Card';
-import Paper from '@mui/material/Paper';
+//import Paper from '@mui/material/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 
 //css import 
@@ -70,7 +70,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 
     return (
     <section className='row'>
-        <h1 className={classes.featureCard}>The Future of Medical Examinations</h1>
+        <h1 className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
       <Card varient="outlined" className='col-lg-6 info-plane'>
         
         <div className={classes.featureSubtext}>

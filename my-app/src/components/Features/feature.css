@@ -61,6 +61,20 @@
 .copy {
   padding-bottom: 2rem;
 }
+
+/* start media queries */
+
+@media screen and (max-width: 960px) {
+  .imageDecoration {
+    margin-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .imageDecoration {
+    margin-bottom: 4rem;
+  }
+}
   
 
 
