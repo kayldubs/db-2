@@ -18,6 +18,7 @@ import { useState } from 'react';
 //import animation framework 
 //import { motion } from "framer-motion";
 
+import './mediaQueries.css'
 
 // import images
 import winston from '../../assests/imgs/winston.svg';
@@ -41,13 +42,14 @@ export default function Team() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" sx={{ pt: 8, pb: 6 }}>
+        <Container disableGutters maxWidth="sm" sx={{ pt: 8, pb: 6 }} className='media'>
             <Grid container alignItems="flex-start" style={{
                 position: 'absolute',
                 left: '175px',
                  top: '1750px',
                 // flexWrap:'nowrap'
-            }}>
+                }}
+                >
                     <Card class='col-3-lg'>
                         <CardMedia
                             component="img"
@@ -60,6 +62,7 @@ export default function Team() {
                                 width:'400px',
                                 flexWrap:'nowrap'
                             }}
+                            
                         />
                         <CardContent >
                             <Typography variant="h5" component="h2" align='center'>
@@ -67,7 +70,7 @@ export default function Team() {
                             </Typography>
                             <Typography align='center'>CMO</Typography>
                             {isHovering && (
-                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px'}}>
+                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px'}} className='text'>
                                     Trauma Surgeon located in the North Central Florida area with a background in medicine and applied mathematics. As the founder and CEO, Winston has seen through the development of the Digibeat Electronic Stethoscope from its original prototype developed in Winston’s garage.
                                 </Typography>
                             )}
