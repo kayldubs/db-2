@@ -5,10 +5,6 @@
     .media2 {
         transform:translate(-117%, -900%);
     }
-    .text {
-        text-align: center;
-        transform: translate(10%, 0%);
-    }
     .media3 {
         transform: translate(-123%, 55%);
     }
@@ -20,10 +16,6 @@
     }
     .media2 {
         transform:translate(-90%, -900%);
-    }
-    .text {
-        text-align: center;
-        transform: translate(10%, 0%);
     }
     .media3 {
         transform: translate(-115%, 55%);
