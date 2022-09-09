@@ -64,9 +64,25 @@
 
 /* start media queries */
 
+@media screen and (min-width: 320px) {
+  .mainContainer {
+      position: relative;
+      padding:none;
+      top: 400px;
+  }
+  /* .keyFeatures {
+    margin-bottom: 30px;
+  } */
+  .imageDecoration {
+    margin-top: 20px;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .imageDecoration {
     margin-bottom: 4rem;
+  
   }
 }
 
