@@ -3,7 +3,7 @@
 
 
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
+// import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
@@ -41,7 +41,7 @@ function Footer() {
               : theme.palette.grey[800],
         }}
       >
-        <Container>
+        <Container className='footer1'>
         <div className='footer'>
         <div>
           <Typography variant="body1">

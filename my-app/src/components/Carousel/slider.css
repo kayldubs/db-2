@@ -133,26 +133,7 @@ hr {
 
   /* media queries start */
 
-  @media screen and (min-width: 320px) {
-    .text-hero {
-        text-align: center;
-        position: relative;
-        padding-top: .1rem;
-    }
 
-    .content {
-      width: 400px;
-      transform: translate(-100%, -30%);
-      margin-top: 50px;
-    }
-
-    .buttons{
-        top: -20px;
-    }
-    .everything {
-        height: 300px;
-    }
-}
 
   @media screen and (max-width: 960px) {
       .text-hero {
