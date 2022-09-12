@@ -1,4 +1,10 @@
- 
+ @media screen and (min-width: 320px) {
+     .spacing {
+        top:0;
+        padding: 10px;
+        margin-bottom: 10px;
+     }
+ }
 
 
 

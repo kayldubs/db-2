@@ -101,7 +101,7 @@ export default function About() {
                     <React.Fragment>
                         <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
                         <CssBaseline />
-                        <Container maxWidth="sm" component="main" sx={{ pt:8, pb: 6, mb:3 }}>
+                        <Container maxWidth="sm" component="main" sx={{ pt:8, pb: 6, mb:3 }} className='containerMain'>
                             <Typography
                                 component="h1"
                                 variant="h2"
@@ -114,7 +114,7 @@ export default function About() {
                             {/* <Typography variant="h5" align="center" color="text.secondary" component="p"></Typography> */}
                         </Container>
                         {/* End hero unit */}
-                        <Container maxWidth="md" component="main" class='row'>
+                        <Container maxWidth="md" component="main" className='spacing' direction='row'>
                             <Grid container alignItems="stretch" justifyContent='space-evenly'>
                                 {tiers.map((tier) => (
                                     // Enterprise card is full width at sm breakpoint
@@ -128,7 +128,6 @@ export default function About() {
                                         marginY='-500px'
                                         height='700px'
                                         width='400px'
-                                        className='whoHelp'
                                     >
                                         <Card>
                                         <CardMedia component="h2" variant="h3" color="text.primary" align='center'>
