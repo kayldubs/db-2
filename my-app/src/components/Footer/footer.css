@@ -23,8 +23,10 @@
 /* start media quieries  */
 
 @media screen and (min-width: 320px) {
-    .footer1 {
-        padding: 10px 10px;
-        justify-content: space-between;
+    .footerType {
+        margin: 0px 10px 0px 0px;
+    }
+    .section2 {
+        margin: 0px 10px 0px 0px;  
     }
 }

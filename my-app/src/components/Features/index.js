@@ -61,7 +61,7 @@ function Features() {
           </div>
           </Card>
           <br></br>
-          <Card className='cardPositions4' class='row'>
+          <Card className='cardPositions' class='row'>
           <div class='col-lg-6 copy'>
             <h1 className='title2'>Digital Stethoscope</h1>
             <h2 className='subTitle'>Revolutionize your practice with the DigiBeat Electronic Stethoscope. The DigiBeat Electronic Stethoscope fits advanced asculation technology in the palm of your hand using our 6 layer PCBA architecture.</h2>

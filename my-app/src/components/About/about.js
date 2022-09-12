@@ -101,13 +101,13 @@ export default function About() {
                     <React.Fragment>
                         <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
                         <CssBaseline />
-                        <Container maxWidth="sm" component="main" sx={{ pt: 8, pb: 6, mb: 3 }}>
+                        <Container maxWidth="sm" component="main" sx={{ pt:8, pb: 6, mb:3 }}>
                             <Typography
                                 component="h1"
                                 variant="h2"
                                 align="center"
                                 color="text.primary"
-                                gutterBottom
+                                // gutterBottom
                             >
                                 Who We Help
                             </Typography>
@@ -125,8 +125,10 @@ export default function About() {
                                         class='col-lg-3'
                                         padding='5px'
                                         marginX='10px'
-                                        height='1000px'
+                                        marginY='-500px'
+                                        height='700px'
                                         width='400px'
+                                        className='whoHelp'
                                     >
                                         <Card>
                                         <CardMedia component="h2" variant="h3" color="text.primary" align='center'>
@@ -143,23 +145,7 @@ export default function About() {
                                                     fontSize: '18px',
                                                     alignItems: 'stretch',
                                                 }}
-                                                // sx={{
-                                                //     backgroundColor: (theme) =>
-                                                //         theme.palette.mode === 'light'
-                                                //             ? theme.palette.grey[200]
-                                                //             : theme.palette.grey[700],       
-                                                // }}
                                             />
-                                             {/* <CardContent
-                                             sx={{
-                                                 backgroundColor: (theme) =>
-                                                theme.palette.mode === 'light'
-                                                ? theme.palette.grey[200]
-                                                : theme.palette.grey[700],
-                                            }}
-                                            /> */}
-
-                                            
                                         </Card>
                                     </Grid>
                                 ))}
