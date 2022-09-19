@@ -1,4 +1,4 @@
-/* @media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) {
     .media {
         transform: translate(-25%, -180%);
     }
@@ -8,9 +8,36 @@
     .media3 {
         transform: translate(-123%, 55%);
     }
+    .employeeGrid {
+        flex-direction: column;
+        top: 80px;
+        position: relative;
+        margin: 20px;
+    }
+    .spacing2 {
+        margin-bottom: 40px;
+        padding: 10px;
+    }
+    .text {
+        align-content: center;
+        text-align: center;
+        transform: translate(9%, 0%);
+    }
+    .employeeGrid {
+        margin-top: 20px;
+        
+    }
 }
 
-@media screen and (min-width: 481px) {
+@media (hover:hover) {
+    .text {
+        visibility: visible;
+    }
+       
+    
+}
+
+/* @media screen and (min-width: 481px) {
     .media {
         transform: translate(7%, -180%);
     }

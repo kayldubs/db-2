@@ -129,7 +129,7 @@ export default function About() {
                                         height='700px'
                                         width='400px'
                                     >
-                                        <Card>
+                                        <Card className='spacing2'>
                                         <CardMedia component="h2" variant="h3" color="text.primary" align='center'>
                                                         {tier.icon}
                                                         

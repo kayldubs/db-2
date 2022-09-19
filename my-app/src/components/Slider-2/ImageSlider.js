@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
     featureSubtext: {
       paddingTop: '80px',
-      margin: 'auto',
+      marginBottom: '200px',
       maxWidth: '100%',
       height: "100%",
       textAlign:'center',
@@ -71,9 +71,9 @@ if (!Array.isArray(slides) || slides.length <= 0) {
     return (
     <section className='row'>
         <h1 className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
-      <Card varient="outlined" className='col-lg-6 info-plane'>
+      <Card className='col-lg-6 info-plane'>
         
-        <div className={classes.featureSubtext}>
+        <div className={classes.featureSubtext} class='featureSub'>
         <h2>DigiBeat's patented and intuitive design </h2>
         <p className='desc'>Using wireless technology, our stethescope brings your health and patient accessibility into the modern age.</p>
         <br></br>

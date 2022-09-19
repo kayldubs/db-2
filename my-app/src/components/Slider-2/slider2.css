@@ -48,10 +48,85 @@
    .row {
      position: relative;
      top: 550px;
+     height: auto;
    } 
+   .featureCard {
+     text-align: center;
+   }
+   .info-plane {
+     margin-bottom: 20px;
+   }
+   .sldier {
+     position: relative;
+     display: flex;
+     justify-content: space-evenly;
+     top: -200px;
+   }
+   .featureSub {
+    margin: 10px;
+    text-align: center;
+    font-family: Source San Pro, sans-serif;
+    position: relative;
+    font-size: 14px;
+  }
  }
 
- @media screen and (max-width: 1400px) {
+ @media screen and (min-width: 481px) {
+  .slider {
+    justify-content: center;
+    margin:auto;
+    top: -200px;
+  }
+  .featureCard {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:#6a8aaf;
+  }
+  .featureSub {
+    margin: 10px;
+    text-align: center;
+    font-family: Source San Pro, sans-serif;
+    position: relative;
+    font-size: 14px;
+  }
+ }
+
+ @media screen and (min-width: 700px) {
+   .slider {
+     top:-160px;
+   }
+ }
+
+ @media screen and (min-width: 770px) {
+    .slider {
+      top: 200px;
+      height: 400px;
+      width: 400px;
+      position: relative;
+      
+    } 
+    .image {
+      height: 400px;
+      width: 400px;
+    } 
+    .featureSub {
+      margin: 10px;
+      text-align: center;
+      font-family: Source San Pro, sans-serif;
+      position: relative;
+      font-size: 14px;
+    }
+ }
+
+ /* @media screen and (min-width: 1025px) {
+  .featureCard {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:#6a8aaf;
+  }
+ } */
+
+ /* @media screen and (max-width: 1400px) {
    .featureCard {
      text-align: center;
      text-decoration: underline;
@@ -67,25 +142,8 @@
      margin:auto;
      margin-top: 20px;
    }
- }
+ } */
 
- @media screen and (max-width: 1024px) {
-  .slider {
-    justify-content: center;
-    margin:auto;
-    top: -200px;
-  }
-  .featureCard {
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color:#6a8aaf;
-  }
- }
 
- @media screen and (min-width: 1025px) {
-  .featureCard {
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color:#6a8aaf;
-  }
- }
+
+ 

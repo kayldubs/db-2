@@ -28,10 +28,6 @@ const ImageHero = ({ slides }) => {
         const newCurrent = isLastSlide ? 0 : current + 1;
         setCurrent(newCurrent)
     };
-
-    // const prevSlide = () => {
-    //     setCurrent(current === 0 ? length - 1 : current - 1);
-    // };
     if (!Array.isArray(slides) || slides.length <= 0) {
         return;
     }

@@ -5,7 +5,7 @@ import './feature.css';
 //Material UI Imports 
 import CardMedia from '@mui/material/CardMedia';
 import Card from '@mui/material/Card';
-import Paper from '@mui/material/Paper';
+//import Paper from '@mui/material/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container } from '@mui/material';
 //import { borders } from '@mui/system';
@@ -40,9 +40,9 @@ const useStyles = makeStyles((theme) => ({
 function Features() {
   const classes = useStyles();
   return (
-    <Paper>
+    
       <Container className='mainContainer'>
-      <h1 className={classes.keyFeatures}>Key Features</h1>
+      <h1 className={classes.keyFeatures} class='features'>Key Features</h1>
         <Card className='cardPositions4' class='row'>
           <div className='media' class='col-lg-6'>
             <CardMedia
@@ -100,7 +100,7 @@ function Features() {
         <br></br>
         <br></br>
       </Container>
-    </Paper>
+    
 
   )
 }

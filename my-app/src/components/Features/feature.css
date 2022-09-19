@@ -66,10 +66,17 @@ padding-bottom: 2rem;
     -ms-flex-direction: column;
     flex-direction: column;
 }
-.makeStyles-keyFeatures-4 {
+.features {
   position: relative;
-  top: 450px;
   margin-bottom: 30px;
+  top: 430px;
+  font-family: Source San Pro, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-decoration-color: #6a8aaf;
 }
 .cardPositions4 {
   top: 100px;
