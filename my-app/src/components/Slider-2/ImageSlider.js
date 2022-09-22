@@ -72,11 +72,12 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 }
 
     return (
-    <Grid container row={{xs: 1, sm: 1}} columnSpacing={{ xs: 2, sm: 2, md: 2, lg: 2, xl: 2}}>
-        <h1 className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
+    <Grid container row={{xs: 1, sm: 1, lg: 1}} columnSpacing={{ xs: 1, sm: 2, md: 2, lg: 1, xl: 1}} alignItems='stretch'>
+        <h1 margin='auto' className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
+        <Grid container justifyContent='center' alignItems='stretch' minWidth='100vw' row={{xs: 1, sm: 1, md: 12}} columnSpacing={{xs:1, sm: 1, md: 0}}>
       <Card className='col-lg-6 info-plane'>
         
-        <div className={classes.featureSubtext} class='featureSub'>
+        <div className={classes.featureSubtext} class='featureSub' item xs={12} sm={12} md={12} lg={12} xl={12} >
         <h2>DigiBeat's patented and intuitive design </h2>
         <p className='desc'>Using wireless technology, our stethescope brings your health and patient accessibility into the modern age.</p>
         <br></br>
@@ -96,7 +97,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
             {SliderData.map((slide, index) => {
                 return (
-                    <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                    <div className={index === current ? 'slide active' : 'slide'} key={index} >
                         {index === current && (
                             <img src={slide.image} alt='device angles' className='image'/>
                         )}
@@ -104,6 +105,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
                 )
             })}
         </Card>
+        </Grid>
         </Grid>
     )
 }

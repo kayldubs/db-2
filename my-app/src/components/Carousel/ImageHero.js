@@ -65,7 +65,7 @@ const ImageHero = ({ slides }) => {
                             {index === current && (
                                 <Grid container rowSpacing={-6} marginTop='40px'>
                                     <img src={pictures.image} alt="Hero IMG" className='hero-image' />
-                                    <Grid item direction='column' xs={8.3} sm={6.5} md={5.5} className='content' marginTop='30px'>
+                                    <Grid item direction='column' xs={8.3} sm={6.5} md={5.5} lg={4} xl={4} className='content' marginTop='30px'>
                                         <h2>{pictures.heading}</h2>
                                         <hr></hr>
                                         <p className='tag'>{pictures.desc}</p>

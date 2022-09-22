@@ -56,7 +56,7 @@ padding-bottom: 2rem;
 @media screen and (min-width: 320px) {
 .mainContainer {
     position: relative;
-    padding:none;
+    padding: 10px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -97,6 +97,12 @@ padding-bottom: 2rem;
   -ms-flex-order: 4;
   order: 4;
 }
+
+.imageDecoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 }
 
 @media screen and (min-width: 481px) {
@@ -124,10 +130,12 @@ padding-bottom: 2rem;
   }
 }
 
-/* @media screen and (min-width: 960px) {
+@media screen and (min-width: 769px) {
 .imageDecoration {
-  margin-bottom: 4rem;
-
+  margin: auto;
+}
+.media .media2 {
+  margin: 50px;
 }
 }
 
@@ -135,4 +143,4 @@ padding-bottom: 2rem;
 .imageDecoration {
   margin-bottom: 4rem;
 }
-} */
+}
