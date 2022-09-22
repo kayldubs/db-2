@@ -3,7 +3,7 @@ import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 //Material UI Imports 
 
-import Card from '@mui/material/Card';
+import {Card, Grid} from '@mui/material';
 //import Paper from '@mui/material/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -17,13 +17,16 @@ const useStyles = makeStyles((theme) => ({
       fontSize:'40px', 
       fontFamily:'Source San Pro, sans-serif',
       fontWeight:'Bold',
-      paddingTop: '50px',
       paddingBottom: '50px',
       display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        textAlign:'center',
         textDecoration: 'underline',
         textDecorationColor: '#6a8aaf',
+        maxWidth:'100%',
+        heght:'100%',
+        margin:'auto'
         
     },
     featureSubtext: {
@@ -69,7 +72,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 }
 
     return (
-    <section className='row'>
+    <Grid container row={{xs: 1, sm: 1}} columnSpacing={{ xs: 2, sm: 2, md: 2, lg: 2, xl: 2}}>
         <h1 className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
       <Card className='col-lg-6 info-plane'>
         
@@ -101,7 +104,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
                 )
             })}
         </Card>
-        </section>
+        </Grid>
     )
 }
 

@@ -96,7 +96,6 @@
       position: relative;
       justify-content: center;
       top:-250px;
-      /* right: 0px; */
   }
   .buttons-style {
       padding: 10px;
@@ -117,54 +116,51 @@
   }
   
   /* media queries start */
-  @media screen and (min-width: 320px) {
-    .text-hero {
-        margin-top: 100px;
-        text-align: center;
-        position: relative;
-        padding-top: .1rem;
+  @media screen and (max-width: 480px) {
+    .content {
+      transform: translate(-9%, -70%);
+      margin-top: 30px;
+      font-size: 12px;
+      display: flex;
+      position: relative;
+      max-width: 250px;
+      
     }
-  
-    
-    .buttons{
-        top: -20px;
+     .everything {
+        height: 500px;
+    }
+    .text-hero {
+      margin-bottom: 20px;
     }
     .top-content {
-        text-align: center;
-        margin-right: 80px;
-    }
-    .everything {
-        height: 300px;
-    }
-    .content {
-      width: 400px;
-      transform: translate(-100%, -30%);
-      margin-top: 50px;
+      margin: 3rem;
     }
   }
   
-  @media screen and (min-width: 480px) {
-    .text-hero {
+  @media screen and (max-width: 768px) {
+    /* .text-hero {
         margin-top: 100px;
-    }
+    } */
     .hero-image {
-        max-width: 480px;
+        max-width: 450px;
         max-height: 250px;
         margin-top: 250px;
+        margin-bottom: 30px;
     }
     .content {
-      max-width: 450px;
+      width: 350px;
       max-height: 250px;
-      transform: translate(-2%, -70%);
+      transform: translate(15%, -60%);
       margin-top: 30px;
       font-size: 12px;
     }
-    .buttons{
-        top: 250px;
+    
+    .top-content {
+     margin-bottom: 100px;
     }
   }
   
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1024px) {
     .content {
         width: 400px;
       }
@@ -172,27 +168,34 @@
           top: -350px;
       }
       .hero-image {
-        
-        transform: translate(0%, -10%);
-        width: 1000px;
-        height: 500px;
+        width: 600px;
+        height: 300px;
+        margin-top: 50px;
+      }
+      .content {
+        width: 550px;
+        max-height: 250px;
+        transform: translate(15%, -80%);
+        margin-top: 30px;
+        margin-bottom: 60px;
+        font-size: 12px;
       }
   }
   
-  @media screen and (min-width: 1600px) {
+  /* @media screen and (min-width: 1600px) {
     .content {
         width: 400px;
-        /* transform: translate(-63.5%, -50%); */
+        transform: translate(-63.5%, -50%);
         margin-top: 50px;
       }
       .buttons {
           top: -250px;
       }
       .hero-image {
-        /* transform: translate(0%, 5%); */
+        transform: translate(0%, 5%);
         width: 1400px;
         height: 700px;
       }
-    }
+    } */
 
 

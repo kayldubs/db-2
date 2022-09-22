@@ -124,7 +124,7 @@
 
   /* start media queries */
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 480px) {
   .form-container {
     position: relative;
     margin-top: 590px;

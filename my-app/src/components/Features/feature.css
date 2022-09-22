@@ -65,11 +65,12 @@ padding-bottom: 2rem;
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
     flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
 }
 .features {
   position: relative;
   margin-bottom: 30px;
-  top: 430px;
   font-family: Source San Pro, sans-serif;
   font-weight: bold;
   font-size: 48px;
@@ -98,15 +99,40 @@ padding-bottom: 2rem;
 }
 }
 
-@media screen and (min-width: 960px) {
-/* .imageDecoration {
+@media screen and (min-width: 481px) {
+  .cardPositions4 {
+    top: 500px;
+    position: relative;
+  }
+  .mainContainer {
+    position: relative;
+    padding-top: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+  .imageDecoration {
+    margin-bottom: 20px;
+    max-height: 700px;
+    max-width: 700px;
+    
+  }
+}
+
+/* @media screen and (min-width: 960px) {
+.imageDecoration {
   margin-bottom: 4rem;
 
-} */
+}
 }
 
 @media screen and (max-width: 1024px) {
 .imageDecoration {
   margin-bottom: 4rem;
 }
-}
+} */

@@ -1,5 +1,6 @@
 import React from 'react';
 import './feature.css';
+//import Media from 'react-media';
 
 
 //Material UI Imports 
@@ -54,7 +55,6 @@ function Features() {
           </div>
           <div className='media2' class='col-lg-6 flex-row'>
           <h1 className='title'>Remote Patient Monitoring</h1>
-            {/* <h2 className='subTitle'>Revolutionize your practice with the DB1 Digital stethoscope. DB1 fits advanced asculation technology in the palm of your hand using our 6 layer PCBA architecture.</h2> */}
             <h2 className='ptag'>Connect to patients anywhere with Digibeat’s remote patient monitoring tools.</h2>
             <p className='ptag'>• AI-guided exams and encrypted smart notifications enable physicians to stay informed about their patients' health and dynamically adjust care regimens based on data driven conclusions.</p>
             <p className='ptag'>• Intelligently highlight changes in medications and key biometrics to provide an overview of a patient’s disease progression.</p>

@@ -1,4 +1,4 @@
- @media screen and (min-width: 320px) {
+ @media screen and (max-width: 480px) {
      .spacing {
         top:0;
         padding: 10px;
