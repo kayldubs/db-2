@@ -24,7 +24,7 @@ import IMG3 from '../../assests/imgs/infoAI.svg';
 
 function Features() {
   return (
-      <Grid container className='mainContainer' spacing={{ xs: 1, sm: 1}} columnGap={{xs: 6, sm: 6}} rowGap={{xs: 1}} >
+      <Grid container className='mainContainer' spacing={{ xs: 0, sm: 0}} columnGap={{xs: 6, sm: 6}} rowGap={{xs: 1}} >
       <h1 class='features'>Key Features</h1>
         <Card className='cardPositions4' class='row'>
           <div className='media' class='col-lg-6'>
