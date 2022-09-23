@@ -25,7 +25,7 @@ function Featured() {
         setIsHovering(false);
     }
   return (
-    <Grid container spacing={5} className='employeeGrid' style={{
+    <Grid container spacing={5} rowGap={{xl: 1}} className='employeeGrid' style={{
         display: 'flex',
         position:'relative',
         justifyContent: 'center',

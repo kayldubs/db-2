@@ -38,7 +38,7 @@ const ImageHero = ({ slides }) => {
     }
 
     return (
-        <Grid container>
+        <Grid container paddingTop='50px'>
         <Grid className='everything' item xs={12} sm={12}>
             <div className='text-hero'>
                 <h1>The World's Most</h1>

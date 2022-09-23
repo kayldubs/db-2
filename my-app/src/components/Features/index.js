@@ -42,9 +42,8 @@ const useStyles = makeStyles((theme) => ({
 function Features() {
   const classes = useStyles();
   return (
-    
-      <Grid container className='mainContainer' spacing={{ xs: 1, sm: 1}} columnGap={{xs: 6, sm: 6}} rowGap={{xs: 1}} >
-      <h1 className={classes.keyFeatures} class='features'>Key Features</h1>
+      <Grid container className='mainContainer' spacing={{ xs: 0, sm: 0}} columnGap={{xs: 6, sm: 6}} rowGap={{xs: 1}} >
+      <h1 class='features'>Key Features</h1>
         <Card className='cardPositions4' class='row'>
           <div className='media' class='col-lg-6'>
             <CardMedia
