@@ -59,7 +59,7 @@ ul {
 
 /* start media queries*/
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
     .menu-icon {
         display: block;
         position: absolute;
@@ -68,6 +68,10 @@ ul {
         transform: translate(-100%, 40%);
         font-size: 1.8rem;
         cursor: pointer;
+    }
+    .nav-links {
+        font-size: 1.5rem;
+        align-items: center;
     }
 }
 
@@ -89,19 +93,20 @@ ul {
     }
 
     .nav-menu.active {
-        background: #b3e1f5;
+        background: rgba(179, 225, 245, .8);
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
+        height: 5rem;
     }
 
     .nav-links {
         text-align: center;
-        padding: 2rem;
+        padding: 1.5rem;
         margin: auto;
-        display: table;
-        justify-content: space-evenly;
+        display:inline-block;
+        justify-content: space-around;
         color: #305074;
         align-items: stretch;
     }
@@ -127,5 +132,11 @@ ul {
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .menu-icon {
+        display:none;
     }
 }

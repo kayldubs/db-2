@@ -3,7 +3,7 @@
 
 
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
+// import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
@@ -32,8 +32,8 @@ function Footer() {
       <Box
         component="footer"
         sx={{
-          py: 3,
-          px: 2,
+          py: 2,
+          px: 1,
           mt: 'auto',
           backgroundColor: (theme) =>
             theme.palette.mode === 'light'
@@ -41,9 +41,9 @@ function Footer() {
               : theme.palette.grey[800],
         }}
       >
-        <Container>
+        <Container className='footer1'>
         <div className='footer'>
-        <div>
+        <div className='footerType'>
           <Typography variant="body1">
             Contact
           </Typography>
@@ -51,8 +51,8 @@ function Footer() {
               Support@digibeat.health
           </Typography>
           </div>
-          <div className='section2'>
-          <Typography variant="body1">
+          <div className='section2' style={{paddingBottom:'200px'}}>
+          <Typography variant="body1" >
             Navigation
         </Typography>
           <Link color="inherit" href="/" >
@@ -61,11 +61,11 @@ function Footer() {
       <Link color="inherit" href="/faq">
         FAQ
       </Link>
-      <Link color="inherit" href="/">
+      <Link color="inherit" href="/about">
         About
       </Link>
       </div>
-      <div>
+      <div className='footerType'>
           <Card>
               <CardMedia
               sx={{
@@ -79,7 +79,7 @@ function Footer() {
               />
           </Card>
       </div>
-      <div className='section2'>
+      <div className='section2'style={{paddingBottom:'180px'}}>
       <Typography variant="body1">
             Regulatory
         </Typography>
@@ -96,7 +96,7 @@ function Footer() {
         FICO Policy
       </Link>
       </div>
-      <div className='section2'>
+      <div className='section2' style={{marginBottom:'10px'}}>
       <Typography variant="body1">
             Resources
         </Typography>

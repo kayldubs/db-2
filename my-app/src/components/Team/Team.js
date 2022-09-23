@@ -1,12 +1,11 @@
 
 // import Button from '@mui/material/Button';
 // import GlobalStyles from '@mui/material/GlobalStyles';
-import Card from '@mui/material/Card';
+import { Card, Grid } from '@mui/material';
 //import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 // import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
 // import Stack from '@mui/material/Stack';
 // import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -43,11 +42,10 @@ export default function Team() {
 
     return (
         <Container disableGutters maxWidth="sm" sx={{ pt: 8, pb: 6 }} className='media'>
-            <Grid container alignItems="flex-start" style={{
-                position: 'absolute',
-                left: '175px',
-                 top: '1750px',
-                // flexWrap:'nowrap'
+            <Grid container spacing={{xs: 12, xl:3}} alignItems="center" style={{
+                position: 'relative',
+                top: '-180px',
+                right: '30px'
                 }}
                 >
                     <Card class='col-3-lg'>
@@ -64,13 +62,13 @@ export default function Team() {
                             }}
                             
                         />
-                        <CardContent >
+                        <CardContent>
                             <Typography variant="h5" component="h2" align='center'>
                                 Winston T. Richards, MD
                             </Typography>
                             <Typography align='center'>CMO</Typography>
                             {isHovering && (
-                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px'}} className='text'>
+                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px' }} className='text'>
                                     Trauma Surgeon located in the North Central Florida area with a background in medicine and applied mathematics. As the founder and CEO, Winston has seen through the development of the Digibeat Electronic Stethoscope from its original prototype developed in Winston’s garage.
                                 </Typography>
                             )}

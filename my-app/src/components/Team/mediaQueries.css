@@ -1,24 +1,24 @@
-@media screen and (min-width: 320px) {
-    .media {
-        transform: translate(-25%, -180%);
+@media screen and (max-width: 480px) {
+    .employeeGrid {
+        flex-direction: column;
+        top: 80px;
+        position: relative;
+        margin: 20px;
     }
-    .media2 {
-        transform:translate(-117%, -900%);
+    .text {
+        align-content: center;
+        text-align: center;
+        transform: translate(9%, 0%);
     }
-    .media3 {
-        transform: translate(-123%, 55%);
+    .employeeGrid {
+        margin-top: 20px;
     }
 }
 
-@media screen and (min-width: 481px) {
-    .media {
-        transform: translate(7%, -180%);
-    }
-    .media2 {
-        transform:translate(-90%, -900%);
-    }
-    .media3 {
-        transform: translate(-115%, 55%);
-    }
+@media (hover:hover) {
+    .text {
+        visibility: visible;
+    }   
 }
+
 

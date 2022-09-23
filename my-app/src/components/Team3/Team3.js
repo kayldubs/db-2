@@ -40,11 +40,15 @@ export default function Team3() {
 
     return (
         <Container disableGutters maxWidth="sm" sx={{ pt: 8 }} className='media3'>
-            <Grid container style={{
+            <Grid container spacing={{xl:3}} style={{
                 position: 'relative',
-                top: '-270px',
-                right: '-555px',
+                top: '-1770px',
                 flexWrap:'nowrap'
+            }}
+            xs={{
+                direction:'column',
+                justifyContent:'center',
+                alignItems:'center',
             }}>
                     <Card class='col-3-lg'>
                         <CardMedia

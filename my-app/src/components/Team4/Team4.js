@@ -9,6 +9,8 @@ import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturi
 import InsightsIcon from '@mui/icons-material/Insights';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 
+import '../Team/mediaQueries.css'
+
 function Featured() {
   const [isHovering, setIsHovering] = useState(false);
 
@@ -23,15 +25,15 @@ function Featured() {
         setIsHovering(false);
     }
   return (
-    <Grid container spacing={5} style={{
-        //display: 'flex',
+    <Grid container spacing={5} className='employeeGrid' style={{
+        display: 'flex',
         position:'relative',
-        justifyContent: 'space-evenly',
+        justifyContent: 'center',
         marginBottom: '200px',
         alignItems: 'stretch',
     }} >
         <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }} 
-        style={{backgroundColor:'#d6d6d6', width:'300px'}} 
+        style={{backgroundColor:'#d6d6d6', width:'300px', margin: '20px'}} 
         >
           <CardContent sx={{ flex: 1 }}>
           <EngineeringRoundedIcon sx={{
@@ -40,7 +42,7 @@ function Featured() {
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
-            top:'-20px'
+            top:'0px'
 
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
@@ -52,7 +54,7 @@ function Featured() {
             </Typography>
             </CardContent>
         </Card>
-        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }}>
+        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }} style={{margin: '20px'}}>
         <CardContent sx={{ flex: 1 }} style={{backgroundColor:'#d6d6d6', width:'300px'}} >
         <PrecisionManufacturingIcon sx={{
             fontSize:40,
@@ -60,7 +62,7 @@ function Featured() {
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
-            top:'-20px'
+            top:'160px'
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
             Calvin Bond
@@ -70,7 +72,7 @@ function Featured() {
             </Typography>
         </CardContent>
         </Card>
-        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }}> 
+        <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }} style={{margin: '20px'}}> 
         <CardContent sx={{ flex: 1 }} style={{backgroundColor:'#d6d6d6', width:'300px'}}>
         <InsightsIcon sx={{
             fontSize:40,
@@ -78,7 +80,7 @@ function Featured() {
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
-            top:'-20px'
+            top:'320px'
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
             Brandon Popp
@@ -91,7 +93,8 @@ function Featured() {
         <Card 
             onMouseOver={handleMouseOver}
             onMouseOut={handleMouseOut}
-            sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }}>
+            sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }}
+            style={{margin: '20px'}}>
         <CardContent sx={{ flex: 1 }} style={{backgroundColor:'#d6d6d6', width:'300px'}}>
         <DesignServicesIcon sx={{
             fontSize:40,
@@ -99,7 +102,7 @@ function Featured() {
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
-            top:'-20px',
+            top:'480px',
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
             Kaylee Stevens

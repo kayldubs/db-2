@@ -15,9 +15,8 @@
     animation: slide-up 1s ease 0.5s;
     animation-fill-mode: forwards;
     
-}
-
-@keyframes slide-up {
+  }
+  @keyframes slide-up {
     0% {
         visibility:visible;
         top: 23rem;
@@ -27,48 +26,40 @@
         top: 17rem;
     }
     
-}
-
-.content > * {
+  }
+  .content > * {
     color: #486290;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
-}
-
-.current {
+  }
+  .current {
     opacity: 1;
-}
-
-.current .content {
+  }
+  .current .content {
     opacity: 1;
-}
-
-hr {
+  }
+  hr {
     height: 5px;
     color: #CDC6AE;
     width: 40%;
-}
-
-/** top text edit**/
-
-.top-content {
+  }
+  /** top text edit**/
+  .top-content {
     font-weight: bolder;
     font-size: 48px;
     color: #27AAE1;
     margin: 1rem;
     animation: fadeIn 2s; 
-}
-
-@keyframes fadeIn {
+  }
+  @keyframes fadeIn {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
     }
-}
-
-.hero-icons {
+  }
+  .hero-icons {
     position: relative;
     padding-top: 50px;
     height: 100vh;
@@ -80,8 +71,7 @@ hr {
     border-radius: 5px;
   
   }
-
-.text-hero {
+  .text-hero {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight:bolder;
@@ -89,7 +79,6 @@ hr {
     padding: 3rem;
     margin-bottom: 0px;
   }
-
   .hero-image {
     width: 1400px;
     height: 700px;
@@ -101,21 +90,17 @@ hr {
    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   
   }
-
   .buttons {
       display: flex;
       flex-direction: row;
       position: relative;
       justify-content: center;
       top:-250px;
-      /* right: 0px; */
   }
-
   .buttons-style {
       padding: 10px;
       color: #81CDEE;
   }
-
   .buttons-style :hover {
       color: #486290;
       cursor:pointer;
@@ -126,90 +111,104 @@ hr {
       margin-left: 0;
       margin-right: 0;
   }
-
   .everything {
       height: 1100px;
   }
-
+  
   /* media queries start */
-
   @media screen and (max-width: 480px) {
-    .text-hero {
-        margin-top: 100px;
-        text-align: center;
-    }
-
     .content {
-      width: 400px;
-      transform: translate(-100%, -30%);
-      margin-top: 50px;
+      transform: translate(-9%, -70%);
+      margin-top: 30px;
+      font-size: 12px;
+      display: flex;
+      position: relative;
+      max-width: 250px;
+      
     }
-
-    .buttons{
-        top: -20px;
+     .everything {
+        height: 500px;
     }
-    /* .top-content{
-        text-align:left;
+    .text-hero {
+      margin-bottom: 20px;
+    }
+    .top-content {
+      margin: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* .text-hero {
+        margin-top: 100px;
     } */
-}
-
-  @media screen and (max-width: 960px) {
-      .text-hero {
-          margin-top: 100px;
-      }
-
-      .hero-image {
-          max-width: 480px;
-          max-height: 250px;
-          margin-top: 250px;
-      }
-
-      .content {
+    .hero-image {
         max-width: 450px;
         max-height: 250px;
-        transform: translate(-2%, -70%);
-        margin-top: 30px;
-        font-size: 12px;
-      }
-
-      .buttons{
-          top: 250px;
-      }
+        margin-top: 250px;
+        margin-bottom: 30px;
+    }
+    .content {
+      width: 350px;
+      max-height: 250px;
+      transform: translate(15%, -60%);
+      margin-top: 30px;
+      font-size: 12px;
+    }
+    
+    .top-content {
+     margin-bottom: 100px;
+    }
   }
-
-  @media screen and (max-width: 1400px) {
+  
+  @media screen and (max-width: 1024px) {
     .content {
         width: 400px;
       }
-
       .buttons {
           top: -350px;
       }
-
       .hero-image {
-        
-        transform: translate(0%, -10%);
-        width: 1000px;
-        height: 500px;
-      }
-}
-
-@media screen and (min-width: 1600px) {
-    .content {
-        width: 400px;
-        /* transform: translate(-63.5%, -50%); */
+        width: 600px;
+        height: 300px;
         margin-top: 50px;
       }
-
+      .content {
+        width: 550px;
+        max-height: 250px;
+        transform: translate(15%, -80%);
+        margin-top: 30px;
+        margin-bottom: 60px;
+        font-size: 12px;
+      }
+  }
+  
+  @media screen and (min-width: 1025px) {
+    .content {
+        width: 400px;
+        transform: translate(10%, 20%);
+        margin-top: 50px;
+      }
       .buttons {
           top: -250px;
       }
-
       .hero-image {
-        /* transform: translate(0%, 5%); */
-        width: 1400px;
-        height: 700px;
+        transform: translate(0%, 5%);
+        width: 1000px;
+        height: 500px;
       }
+    }
+
+@media screen and (min-width: 1201px) {
+  .hero-image {
+    width: 1400px;
+    height: 700px;
+  }
+  .top-content .text-hero {
+    padding: 20px;
+  }
+  .buttons {
+    top: -230px;
+  }
 }
 
 

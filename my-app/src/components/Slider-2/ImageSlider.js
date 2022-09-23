@@ -3,7 +3,7 @@ import { SliderData } from './SliderData';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa'
 //Material UI Imports 
 
-import Card from '@mui/material/Card';
+import {Card, Grid} from '@mui/material';
 //import Paper from '@mui/material/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -17,18 +17,21 @@ const useStyles = makeStyles((theme) => ({
       fontSize:'40px', 
       fontFamily:'Source San Pro, sans-serif',
       fontWeight:'Bold',
-      paddingTop: '50px',
       paddingBottom: '50px',
       display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        textAlign:'center',
         textDecoration: 'underline',
         textDecorationColor: '#6a8aaf',
+        maxWidth:'100%',
+        heght:'100%',
+        margin:'auto'
         
     },
     featureSubtext: {
       paddingTop: '80px',
-      margin: 'auto',
+      marginBottom: '200px',
       maxWidth: '100%',
       height: "100%",
       textAlign:'center',
@@ -69,11 +72,12 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 }
 
     return (
-    <section className='row'>
-        <h1 className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
-      <Card varient="outlined" className='col-lg-6 info-plane'>
+    <Grid container row={{xs: 1, sm: 1, lg: 1, xl: 1}} columnSpacing={{ xs: 1, sm: 2, md: 2, lg: 1, xl: 1}} alignItems='stretch'>
+        <h1 margin='auto' className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
+        <Grid container justifyContent='center' alignItems='stretch' minWidth='100vw' row={{xs: 1, sm: 1, md: 12}} columnSpacing={{xs:1, sm: 1, md: 0}}>
+      <Card className='col-lg-6 info-plane'>
         
-        <div className={classes.featureSubtext}>
+        <div className={classes.featureSubtext} class='featureSub' item xs={12} sm={12} md={12} lg={12} xl={12} >
         <h2>DigiBeat's patented and intuitive design </h2>
         <p className='desc'>Using wireless technology, our stethescope brings your health and patient accessibility into the modern age.</p>
         <br></br>
@@ -93,7 +97,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
             {SliderData.map((slide, index) => {
                 return (
-                    <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                    <div className={index === current ? 'slide active' : 'slide'} key={index} >
                         {index === current && (
                             <img src={slide.image} alt='device angles' className='image'/>
                         )}
@@ -101,7 +105,8 @@ if (!Array.isArray(slides) || slides.length <= 0) {
                 )
             })}
         </Card>
-        </section>
+        </Grid>
+        </Grid>
     )
 }
 
