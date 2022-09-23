@@ -78,7 +78,7 @@ const ImageHero = ({ slides }) => {
             </Grid>
             <div className='buttons'>
                 {slides.map((slides, slideIndex) => (
-                    <BsDashLg key={slideIndex} className='buttons-style' size={90} onClick={() => goToSlide(slideIndex)} />
+                    <BsDashLg key={slideIndex} className='buttons-style' size={90} onClick={() => goToSlide(slideIndex)}/>
                 ))}
             </div>
         </Grid>
