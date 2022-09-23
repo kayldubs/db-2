@@ -1,11 +1,5 @@
 /*start features styling */
-.features {
-  margin:auto;
-  font-family: Source San Pro, san-serif;
-  font-weight: bold;
-  font-size: 48px;
-  padding: 2rem;
-}
+
 .media {
   display: flex;
   flex-direction: row;
@@ -148,8 +142,5 @@ padding-bottom: 2rem;
 @media screen and (max-width: 1024px) {
 .imageDecoration {
   margin-bottom: 4rem;
-}
-.features {
-  margin: auto
 }
 }
