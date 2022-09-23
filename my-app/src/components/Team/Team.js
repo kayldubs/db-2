@@ -1,11 +1,12 @@
 
 // import Button from '@mui/material/Button';
 // import GlobalStyles from '@mui/material/GlobalStyles';
-import { Card, Grid } from '@mui/material';
+import Card from '@mui/material/Card';
 //import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 // import CssBaseline from '@mui/material/CssBaseline';
+import Grid from '@mui/material/Grid';
 // import Stack from '@mui/material/Stack';
 // import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -42,10 +43,11 @@ export default function Team() {
 
     return (
         <Container disableGutters maxWidth="sm" sx={{ pt: 8, pb: 6 }} className='media'>
-            <Grid container spacing={{xs: 12, xl:3}} alignItems="center" style={{
-                position: 'relative',
-                top: '-180px',
-                right: '30px'
+            <Grid container alignItems="cente" style={{
+                position: 'absolute',
+                left: '175px',
+                 top: '1750px',
+                // flexWrap:'nowrap'
                 }}
                 >
                     <Card class='col-3-lg'>

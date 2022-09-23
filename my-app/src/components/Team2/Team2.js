@@ -31,15 +31,12 @@ export default function Team2() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" sx={{ pt: 8, pb: 6 }} className='team2'>
-            <Grid container spacing={{xs: 1, xl:3}} direction='column'
-                justifyContent='center'
-                alignItems='center' style={{
-                position: 'relative',
-                  top: '-1200px',
-                  
-            }}
-            >
+        <Container disableGutters maxWidth="sm" sx={{ pt: 8, pb: 6 }} className='media2'>
+            <Grid container style={{
+                position: 'absolute',
+                 top: '1750px',
+                 left:'635px'
+            }}>
 
                 <Grid>
                     <Card class='col-3-lg'>
