@@ -1,22 +1,9 @@
 @media screen and (max-width: 480px) {
-    .media {
-        transform: translate(-25%, -180%);
-    }
-    .media2 {
-        transform:translate(-117%, -900%);
-    }
-    .media3 {
-        transform: translate(-123%, 55%);
-    }
     .employeeGrid {
         flex-direction: column;
         top: 80px;
         position: relative;
         margin: 20px;
-    }
-    .spacing2 {
-        margin-bottom: 40px;
-        padding: 10px;
     }
     .text {
         align-content: center;
@@ -25,8 +12,13 @@
     }
     .employeeGrid {
         margin-top: 20px;
-        
     }
+}
+
+@media (hover:hover) {
+    .text {
+        visibility: visible;
+    }   
 }
 
 @media (hover:hover) {
