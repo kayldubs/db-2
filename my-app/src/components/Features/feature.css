@@ -148,7 +148,7 @@ padding-bottom: 2rem;
 }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1024px) {
 .imageDecoration {
   margin-bottom: 4rem;
 }
