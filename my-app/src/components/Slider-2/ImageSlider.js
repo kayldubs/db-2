@@ -72,7 +72,7 @@ if (!Array.isArray(slides) || slides.length <= 0) {
 
     return (
     <Grid container row={{xs: 1, sm: 1, lg: 1, xl: 1}} columnSpacing={{ xs: 1, sm: 2, md: 2, lg: 1, xl: 1}} alignItems='stretch'>
-        <h1 textAlign='center' className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
+        <h1 className={classes.featureCard} class='featureCard'>The Future of Medical Examinations</h1>
         <Grid container justifyContent='center' alignItems='stretch' minWidth='100vw' row={{xs: 0, sm: 1, md: 12}} columnSpacing={{xs:1, sm: 1, md: 0}}>
       <Card className='col-lg-6 info-plane'>
         <div className={classes.featureSubtext} class='featureSub' item xs={12} sm={12} md={12} lg={12} xl={12} >
