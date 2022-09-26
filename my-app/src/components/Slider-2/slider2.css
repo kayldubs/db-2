@@ -60,7 +60,7 @@
     text-decoration: underline;
     text-decoration-color:#6a8aaf;
     display: flex;
-    justify-content: center;
+    margin: auto;
   }
   .featureSub {
     margin: 10px;
