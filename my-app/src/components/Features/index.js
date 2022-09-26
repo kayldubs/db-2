@@ -7,7 +7,6 @@ import './feature.css';
 import CardMedia from '@mui/material/CardMedia';
 import { Card, Grid } from '@mui/material';
 //import Paper from '@mui/material/Paper';
-import { makeStyles } from '@material-ui/core/styles';
 //import { borders } from '@mui/system';
 
 
@@ -18,29 +17,12 @@ import IMG2 from '../../assests/imgs/deviceInfo2.svg';
 import IMG3 from '../../assests/imgs/infoAI.svg';
 
 //import { borderRadius, fontWeight } from '@material-ui/system';
-const useStyles = makeStyles((theme) => ({
-  keyFeatures: {
-    fontFamily:'Source San Pro, sans-serif',
-    fontWeight:'Bold',
-    color:'black',
-    fontSize:'48px',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textDecoration: 'underline',
-    textDecorationColor: '#6a8aaf',
-    marginBottom: '30px',
-    margin:'auto',
-    marginTop:'30px'
 
-  }
-}))
 
 
  
 
 function Features() {
-  const classes = useStyles();
   return (
       <Grid container className='mainContainer' spacing={{ xs: 0, sm: 0}} columnGap={{xs: 6, sm: 6}} rowGap={{xs: 1}} >
       <h1 class='features'>Key Features</h1>
