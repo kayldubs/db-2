@@ -42,8 +42,7 @@ export default function Team3() {
         <Container disableGutters maxWidth="sm" sx={{ pt: 8 }} className='media3'>
             <Grid container style={{
                 position: 'relative',
-                top: '-270px',
-                right: '-555px',
+                top: '-240px',
                 flexWrap:'nowrap'
             }}>
                     <Card class='col-3-lg'>

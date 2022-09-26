@@ -34,7 +34,7 @@ export default function Team2() {
         <Container disableGutters maxWidth="sm" sx={{ pt: 8, pb: 6 }} className='media2'>
             <Grid container style={{
                 position: 'absolute',
-                 top: '1750px',
+                 top: '1700px',
                  left:'635px'
             }}>
 
