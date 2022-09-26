@@ -1,7 +1,6 @@
 @media screen and (max-width: 480px) {
     .employeeGrid {
         flex-direction: column;
-        top: 80px;
         position: relative;
         margin: 20px;
     }
@@ -29,15 +28,7 @@
     
 }
 
-/* @media screen and (min-width: 481px) {
-    .media {
-        transform: translate(7%, -180%);
-    }
-    .media2 {
-        transform:translate(-90%, -900%);
-    }
-    .media3 {
-        transform: translate(-115%, 55%);
-    }
-} */
+@media screen and (min-width: 1201px) {
+    
+}
 
