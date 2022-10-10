@@ -11,7 +11,6 @@
     flex-direction: row;
     justify-content:left;
     margin-top: 3rem;
-    padding: 3rem;
     color: '#6a8aaf';
 }
 
@@ -20,6 +19,7 @@
     flex-direction: row;
     justify-content:left;
     padding: 3rem;
+    margin: 3rem;
 }
 
 .question {

@@ -30,26 +30,26 @@ const Faq = () => {
             </Box>
             <Card className='questions-section'>
             <Typography>
-                <h2 className='question'>Do I need to download Digibeat Mobile?</h2>
-                <p className='answer'>Yes, you will need to download Digibeat Mobile to store and analyze your recordings taken with the Digibeat Electronic Stethoscope.</p>
-                <h2 className='question'>Is there any cost associated with Digibeat Mobile?</h2>
-                <p className='answer'>No, the Digibeat Mobile is free to download.</p>
-                <h2 className='question'>How do I pair the stethoscope with my phone?</h2>
+                <h2 className='question'>How do I acquire a DigiBeat Electronic Stethoscope?</h2>
+                <p className='answer'>To receive your own DigiBeat Electronic Stethoscope, please complete the form labeled “Interested in trying Digibeat?” on our Home page. A representative from our team will be in contact with you as soon as possible to discuss next steps.</p>
+                <h2 className='question'>Do I need to be a specialist to use the device effectively?</h2>
+                <p className='answer'>No, DigiBeat’s device is designed to be universally accessible, thanks to our easy to follow guided exam process. Physicians can closely monitor recordings taken by their patients and provide supplemental input and guidance.</p>
+                <h2 className='question'>Why should I use the DigiBeat Electronic Stethoscope over a traditional stethoscope?
+                </h2>
                 <p className='answer'>
-                    Once you have downloaded Digibeat Mobile, open the app on your phone and
-                    select “Pair Device” under settings. Make sure your phone’s Bluetooth
-                    is turned on or the device will not be paired.
+                The DigiBeat Electronic Stethoscope drastically simplifies the traditional medical exam process and provides unparalleled data collection and analysis. Users obtain key health insights through Winston (our artificial intelligence) data analysis to help detect the progression of cardiovascular disease related illness.
                 </p>
-                <h2 className='question'>Do I need a specific phone to use the Digibeat Mobile?</h2>
+                <h2 className='question'>Are there any special tools needed to use the device?</h2>
                 <p className='answer'>
-                    No, the companion application is available for both Android and IOS.
+                No, the DigiBeat stethoscope is a stand alone unit that can be used like a normal stethoscope. If you wish to save or share your exams, a mobile device will be needed to run our application(s).
                 </p>
-                <h2 className='question'>My device is having trouble with taking recordings. What should I do? </h2>
+                <h2 className='question'>Will the DigiBeat Electronic Stethoscope work with my phone?</h2>
                 <p className='answer'>
-                    Pay special attention to the prompts displayed on screen, and confirm that you are placing
-                    the stethoscope in the location on your body that matches the location shown on screen.
-                    Also, ensure that you are seated in quiet room with minimal ambient noise and remaining
-                    still while recording.
+                Yes, the DigiBeat Electronic Stethoscope is compatible with all Apple and Android smartphone devices.
+                </p>
+                <h2 className='question'>How does DigiBeat keep data secure?</h2>
+                <p className='answer'>
+                DigiBeat understands the necessity of data privacy, and ensures that all HIPAA standards and regulations for PHI are met to protect the privacy of our users.
                 </p>
             </Typography>
             </Card>
