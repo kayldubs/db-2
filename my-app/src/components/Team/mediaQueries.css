@@ -7,8 +7,8 @@
     }
     .text {
         align-content: center;
-        text-align: center;
-        transform: translate(9%, 0%);
+        /* text-align: center; */
+        /* transform: translate(9%, 0%); */
     }
     .employeeGrid {
         margin-top: 20px;
@@ -19,6 +19,13 @@
     .text {
         visibility: visible;
     }   
+}
+
+@media screen and (min-width: 1201px) {
+    .flex-container {
+        align-content: center;
+        flex-direction: column;
+    }
 }
 
 

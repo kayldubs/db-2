@@ -39,7 +39,7 @@ export default function Team3() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" sx={{ pt: 8 }} className='media3'>
+        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8 }} className='media3'>
             <Grid container spacing={{xl:3}} style={{
                 position: 'relative',
                 top: '-1770px',
@@ -64,15 +64,17 @@ export default function Team3() {
                             }}
                         />
                         <CardContent >
+                        <div className='flex-container'>
                             <Typography variant="h5" component="h2" align='center'>
                                 Karl Dockendorf
                             </Typography>
                             <Typography align='center'>CTO</Typography>
                             {isHovering && (
-                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px'}} className='text'>
+                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px',  marginLeft: '30px', textAlign: 'center'}} className='text'>
                                     Karl earned his BS and ME in electrical and computer engineering followed by a Ph.D. in biomedical engineering (neural engineering focus) from the University of Florida.  Karl is well versed in the design of computer hardware, intelligent information processing, machine learning, and adaptation of neuronal networks.
                                 </Typography>
                             )} 
+                        </div> 
                         </CardContent>
                     </Card>
                 </Grid>

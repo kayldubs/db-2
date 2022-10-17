@@ -25,12 +25,13 @@ function Featured() {
         setIsHovering(false);
     }
   return (
-    <Grid container spacing={5} rowGap={{xl: 1}} className='employeeGrid' style={{
+    <Grid container spacing={1} rowGap={{xl: 1}} className='employeeGrid' style={{
         display: 'flex',
         position:'relative',
         justifyContent: 'center',
         marginBottom: '200px',
         alignItems: 'stretch',
+        top: '-2000px'
     }} >
         <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }} 
         style={{backgroundColor:'#d6d6d6', width:'300px', margin: '20px'}} 
@@ -62,7 +63,7 @@ function Featured() {
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
-            top:'160px'
+            top:'0px'
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
             Calvin Bond
@@ -80,7 +81,7 @@ function Featured() {
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
-            top:'320px'
+            top:'0px'
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
             Brandon Popp
@@ -102,7 +103,7 @@ function Featured() {
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
             position:'absolute',
-            top:'480px',
+            top:'0px',
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
             Kaylee Stevens

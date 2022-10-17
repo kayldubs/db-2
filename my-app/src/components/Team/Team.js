@@ -41,7 +41,7 @@ export default function Team() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" sx={{ pt: 8, pb: 6 }} className='media'>
+        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb: 6 }} className='media'>
             <Grid container spacing={{xs: 12, xl:3}} alignItems="center" style={{
                 position: 'relative',
                 top: '-180px',
@@ -62,16 +62,18 @@ export default function Team() {
                             }}
                             
                         />
-                        <CardContent>
+                        <CardContent alignItems='center'>
+                            <div className='flex-container'>
                             <Typography variant="h5" component="h2" align='center'>
                                 Winston T. Richards, MD
                             </Typography>
                             <Typography align='center'>CMO</Typography>
                             {isHovering && (
-                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px' }} className='text'>
+                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px', marginLeft: '30px', textAlign: 'center' }} className='text'>
                                     Trauma Surgeon located in the North Central Florida area with a background in medicine and applied mathematics. As the founder and CEO, Winston has seen through the development of the Digibeat Electronic Stethoscope from its original prototype developed in Winston’s garage.
                                 </Typography>
                             )}
+                            </div>
                         </CardContent>
                     </Card>
                 </Grid>

@@ -114,7 +114,7 @@ export default function About() {
                             {/* <Typography variant="h5" align="center" color="text.secondary" component="p"></Typography> */}
                         </Container>
                         {/* End hero unit */}
-                        <Container maxWidth="md" component="main" direction='row'>
+                        <Container maxWidth="lg" component="main" direction='row'>
                             <Grid container rowGap={{xs: 6, sm: 6, md: 6, lg: 6, xl: 3 }} alignItems="stretch" justifyContent='space-evenly'>
                                 {tiers.map((tier) => (
                                     // Enterprise card is full width at sm breakpoint
@@ -126,8 +126,8 @@ export default function About() {
                                         padding='5px'
                                         marginX='10px'
                                         marginY='60px'
-                                        height='500px'
-                                        width='700px'
+                                        height='700px'
+                                        maxWidth='350px'
                                         
                                     >
                                         <Card className='spacing2'>

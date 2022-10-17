@@ -31,7 +31,7 @@ export default function Team2() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" sx={{ pt: 8, pb: 6 }} className='team2'>
+        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb: 6 }} className='team2'>
             <Grid container spacing={{xs: 1, xl:3}} direction='column'
                 justifyContent='center'
                 alignItems='center' style={{
@@ -54,16 +54,18 @@ export default function Team2() {
                                 width:'400px',
                             }}
                         />
-                        <CardContent >
+                        <CardContent>
+                        <div className='flex-container'>
                             <Typography variant="h5" component="h2" align='center'>
                                 Clifford Steele
                             </Typography>
                             <Typography align='center'>CEO</Typography>
                             {isHovering && (
-                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px'}} className='text'>
+                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px',  marginLeft: '30px', textAlign: 'center'}} className='text'>
                                     Cliff has a background in Aeronautical, Aerospace and Astronautical Engineering from Embry-Riddle Aeronautical University. He focuses on project organization while being the brains behind the engineering that goes into developing the Digibeat Electronic Stethoscope.
                                         </Typography>
                                         )}
+                        </div>
                         </CardContent>
                     </Card>
                 </Grid>

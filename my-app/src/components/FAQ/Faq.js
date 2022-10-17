@@ -11,17 +11,6 @@ import './faq.css';
 const Faq = () => {
 
     return (
-        // <Paper
-        //     // sx={{
-        //     //     position: 'relative',
-        //     //     backgroundColor: '#dbf1fa',
-        //     //     color: '#6a8aaf',
-        //     //     mb: 4,
-        //     //     backgroundSize: 'cover',
-        //     //     backgroundRepeat: 'no-repeat',
-        //     //     backgroundPosition: 'center',
-        //     // }}
-        // >
         <Container>
             <Box className='top-box'>
             <Typography>
