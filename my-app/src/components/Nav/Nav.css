@@ -78,9 +78,8 @@ ul {
     .menu-icon {
         display: block;
         position: absolute;
-        top: 20%;
+        top: 40%;
         right: 0;
-        transform: translate(-100%, 40%);
         font-size: 1.8rem;
         cursor: pointer;
     }
@@ -112,7 +111,7 @@ ul {
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 1;
-        height: 5rem;
+        height: 6rem;
     }
 
     .nav-links {
@@ -120,7 +119,7 @@ ul {
         padding: 1.5rem;
         margin: auto;
         display:inline-block;
-        justify-content: space-around;
+        justify-content: space-evenly;
         color: #305074;
         align-items: stretch;
     }
