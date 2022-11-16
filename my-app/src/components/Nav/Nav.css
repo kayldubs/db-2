@@ -19,10 +19,25 @@ ul {
 }
 
 .navbar-logo {
-    justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
     height: 100px;
+    margin-left: 40px;
+}
+
+.logo-text {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.a {
+    max-width: 2px;
+}
+
+.logo-text {
+    text-decoration: none;
+    font-family: Expletus Sans;
+    color: #000000;
 }
 
 .nav-menu {

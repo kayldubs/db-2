@@ -39,7 +39,7 @@ const ImageHero = ({ slides }) => {
     }
 
     return (
-        <Container paddingTop='50px'>
+        <Container>
         <Grid className='everything'>
             <div className='text-hero'>
                 <h1>The World's Most</h1>

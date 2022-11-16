@@ -1,5 +1,5 @@
-import { CardMedia } from '@mui/material';
-import Logo from '../../assests/imgs/nav-header.svg';
+import { CardContent, CardMedia } from '@mui/material';
+import Logo from '../../assests/imgs/DBSoloLogo.svg';
 import React, { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import  '../Nav/Nav.css'
@@ -17,7 +17,7 @@ class Nav extends Component {
     render() {
         return(
             <nav position="sticky" className='NavItems'>
-                <a href="/" >
+                <a href="/">
                 <CardMedia className='navbar-logo'
                          component="img"
                          alt="Your logo."
@@ -26,6 +26,7 @@ class Nav extends Component {
                      >
                      </CardMedia>
                  </a>
+                 <h1 className="logo-text">DigiBeat</h1>
                  <div className='menu-icon' onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
