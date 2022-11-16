@@ -1,17 +1,20 @@
 @media screen and (max-width: 480px) {
     .employeeGrid {
-        flex-direction: column;
-        top: 80px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         position: relative;
-        margin: 20px;
-    }
-    .text {
-        align-content: center;
-        /* text-align: center; */
-        /* transform: translate(9%, 0%); */
-    }
-    .employeeGrid {
         margin-top: 20px;
+        align-content: center;
+    }
+    .media1 {
+        margin-left: 135px;
+        margin-bottom: 400px;
+    }
+    .media2 {
+        margin-bottom: 400px;
+    }
+    .media3 {
+        margin-right: 700px;
     }
 }
 
@@ -25,6 +28,10 @@
     .flex-container {
         align-content: center;
         flex-direction: column;
+    }
+    .employeeGrid {
+        align-content: center;
+        flex-direction: row;
     }
 }
 

@@ -39,18 +39,15 @@ export default function Team3() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8 }} className='media3'>
-            <Grid container spacing={{xl:3}} style={{
-                position: 'relative',
-                top: '-1770px',
-                flexWrap:'nowrap'
-            }}
-            xs={{
-                direction:'column',
-                justifyContent:'center',
-                alignItems:'center',
-            }}>
-                    <Card class='col-3-lg'>
+        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8 }} className='employeeGrid'>
+            <Grid container spacing={{xs: 1, xl:3}} direction='column'
+            // xs={{
+            //     direction:'column',
+            //     justifyContent:'center',
+            //     alignItems:'center'
+            // }}
+            >
+                    <Card class='media3'>
                         <CardMedia
                             component="img"
                             image={karll}
@@ -63,7 +60,7 @@ export default function Team3() {
                                 flexWrap:'nowrap'
                             }}
                         />
-                        <CardContent >
+                        <CardContent alignItems="center">
                         <div className='flex-container'>
                             <Typography variant="h5" component="h2" align='center'>
                                 Karl Dockendorf

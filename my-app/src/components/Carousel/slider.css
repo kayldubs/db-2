@@ -1,9 +1,8 @@
 .content {
     position: absolute;
-    top: 23rem;
+    top: 17rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: left;
     width: 30%;
     margin-left: 55px;
@@ -14,16 +13,15 @@
     border-color: #C1C1C1;
     animation: slide-up 1s ease 0.5s;
     animation-fill-mode: forwards;
-    
   }
   @keyframes slide-up {
     0% {
         visibility:visible;
-        top: 23rem;
+        top: 17rem;
     }
     100% {
         visibility: visible;
-        top: 17rem;
+        top: 5rem;
     }
     
   }
@@ -59,6 +57,12 @@
         opacity: 1;
     }
   }
+
+  .bottom-content {
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
   .hero-icons {
     position: relative;
     padding-top: 50px;
@@ -111,29 +115,42 @@
       margin-left: 0;
       margin-right: 0;
   }
-  .everything {
-      height: 1100px;
-  }
   
   /* media queries start */
   @media screen and (max-width: 480px) {
     .content {
-      transform: translate(-9%, -70%);
-      margin-top: 30px;
       font-size: 12px;
       display: flex;
       position: relative;
-      max-width: 250px;
+      justify-content: center;
+      max-width: 350px;
+      margin-left: 30px;
+    }
+    @keyframes slide-up {
+      0% {
+          visibility:visible;
+          top: 5rem;
+      }
+      100% {
+          visibility: visible;
+          top: 0rem;
+      }
       
     }
+    .hero-container {
+      margin-top: 250px;
+      justify-content: center;
+    }
      .everything {
-        height: 500px;
+        height: 200px;
     }
     .text-hero {
       margin-bottom: 20px;
+      max-height: 200px;
     }
-    .top-content {
-      margin: 1rem;
+    
+    .buttons {
+      top: 0px;
     }
   }
   
@@ -144,13 +161,13 @@
     .hero-image {
         max-width: 450px;
         max-height: 250px;
-        margin-top: 250px;
+        /* margin-top: 250px; */
         margin-bottom: 30px;
     }
     .content {
       width: 350px;
       max-height: 250px;
-      transform: translate(15%, -60%);
+      /* transform: translate(15%, -60%); */
       margin-top: 30px;
       font-size: 12px;
     }
@@ -165,7 +182,7 @@
         width: 400px;
       }
       .buttons {
-          top: -350px;
+          /* top: -350px; */
       }
       .hero-image {
         width: 600px;
@@ -175,7 +192,7 @@
       .content {
         width: 550px;
         max-height: 250px;
-        transform: translate(15%, -80%);
+        /* transform: translate(15%, -80%); */
         margin-top: 30px;
         margin-bottom: 60px;
         font-size: 12px;
@@ -185,7 +202,7 @@
   @media screen and (min-width: 1025px) {
     .content {
         width: 400px;
-        transform: translate(10%, 20%);
+        /* transform: translate(10%, 20%); */
         margin-top: 50px;
       }
       .buttons {
@@ -207,7 +224,7 @@
     padding: 20px;
   }
   .buttons {
-    top: -230px;
+    /* top: -230px; */
   }
 }
 

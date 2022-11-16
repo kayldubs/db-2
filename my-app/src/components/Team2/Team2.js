@@ -31,18 +31,13 @@ export default function Team2() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb: 6 }} className='team2'>
+        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb: 6 }} className='employeeGrid'>
             <Grid container spacing={{xs: 1, xl:3}} direction='column'
                 justifyContent='center'
-                alignItems='center' style={{
-                position: 'relative',
-                  top: '-1200px',
-                  
-            }}
+                alignItems='center'
+            
             >
-
-                <Grid>
-                    <Card class='col-3-lg'>
+                    <Card class='media2'>
                         <CardMedia
                             component="img"
                             image={cliff}
@@ -52,6 +47,7 @@ export default function Team2() {
                             style={{
                                 height: '400px',
                                 width:'400px',
+                                flexWrap:'nowrap'
                             }}
                         />
                         <CardContent>
@@ -69,7 +65,6 @@ export default function Team2() {
                         </CardContent>
                     </Card>
                 </Grid>
-            </Grid>
         </Container>
     );
 }

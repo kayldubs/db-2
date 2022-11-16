@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { HeroData } from './HeroData';
 import { BsDashLg } from 'react-icons/bs';
 import './slider.css';
+import { Container } from '@mui/system';
 import Grid from '@mui/material/Grid';
 
 
@@ -38,16 +39,17 @@ const ImageHero = ({ slides }) => {
     }
 
     return (
-        <Grid container paddingTop='50px'>
-        <Grid className='everything' item xs={12} sm={12}>
+        <Container paddingTop='50px'>
+        <Grid className='everything'>
             <div className='text-hero'>
                 <h1>The World's Most</h1>
                 {HeroData.map((header, index) => {
                     return (
                         <div className={index === current ? 'text active' : 'text'} key={index} >
                             {index === current && (
-                                <Grid className='top-content' item xs={12} sm={12} md={12}>
+                                <Grid className='top-content' direction="row" item xs={12} sm={12} md={12}>
                                     <h2>{header.header}</h2>
+                                    <h1 className="bottom-content">Electronic Stethoscope</h1>
                                 </Grid>
                             )}
                         </div>
@@ -55,17 +57,20 @@ const ImageHero = ({ slides }) => {
                 },
                 )
                 }
-                <h1>Electronic Stethoscope</h1>
+                
 
             </div>
+            </Grid>
             <Grid className='hero-icons' rowSpacing={{xs: 4}}>
                 {HeroData.map((pictures, index) => {
                     return (
                         <div className={index === current ? 'slide active' : 'slide'} key={index}>
                             {index === current && (
-                                <Grid container rowSpacing={-6} marginTop='40px'>
+                                <Grid container className="hero-container">
                                     <img src={pictures.image} alt="Hero IMG" className='hero-image' />
-                                    <Grid item direction='column' xs={8.3} sm={6.5} md={5.5} lg={4} xl={4} className='content' marginTop='30px'>
+                                    <Grid item direction='column' 
+                                    // sm={6.5} md={5.5} lg={4} xl={4} 
+                                    className='content'>
                                         <h2>{pictures.heading}</h2>
                                         <hr></hr>
                                         <p className='tag'>{pictures.desc}</p>
@@ -81,8 +86,7 @@ const ImageHero = ({ slides }) => {
                     <BsDashLg key={slideIndex} className='buttons-style' size={90} onClick={() => goToSlide(slideIndex)}/>
                 ))}
             </div>
-        </Grid>
-     </Grid>
+     </Container>
     )
 };
 

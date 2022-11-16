@@ -41,14 +41,10 @@ export default function Team() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb: 6 }} className='media'>
-            <Grid container spacing={{xs: 12, xl:3}} alignItems="center" style={{
-                position: 'relative',
-                top: '-180px',
-                right: '30px'
-                }}
+        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb: 6 }} className='employeeGrid'>
+            <Grid container spacing={{xs: 12, xl:3}} alignItems="center"
                 >
-                    <Card class='col-3-lg'>
+                    <Card class='media1'>
                         <CardMedia
                             component="img"
                             image={winston}
@@ -58,7 +54,6 @@ export default function Team() {
                             style={{
                                 height: '400px',
                                 width:'400px',
-                                flexWrap:'nowrap'
                             }}
                             
                         />

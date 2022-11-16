@@ -8,8 +8,22 @@ import EngineeringRoundedIcon from '@mui/icons-material/EngineeringRounded';
 import PrecisionManufacturingIcon from '@mui/icons-material/PrecisionManufacturing';
 import InsightsIcon from '@mui/icons-material/Insights';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import '../Team/mediaQueries.css'
+
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    },
+  },
+});
+
 
 function Featured() {
   const [isHovering, setIsHovering] = useState(false);
@@ -18,20 +32,15 @@ function Featured() {
         setIsHovering(true);
 
     }
-
-
-
     const handleMouseOut = () => {
         setIsHovering(false);
     }
   return (
-    <Grid container spacing={1} rowGap={{xl: 1}} className='employeeGrid' style={{
-        display: 'flex',
-        position:'relative',
+    <Grid container spacing={{xs: 1, xl:1}} mt={{xs:'1500px'}} rowGap={{xl: 1}} className='employeeGrid' style={{
         justifyContent: 'center',
         marginBottom: '200px',
         alignItems: 'stretch',
-        top: '-2000px'
+        
     }} >
         <Card sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }} 
         style={{backgroundColor:'#d6d6d6', width:'300px', margin: '20px'}} 
@@ -42,7 +51,7 @@ function Featured() {
             marginLeft:'115px',
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
-            position:'absolute',
+            position:'relative',
             top:'0px'
 
           }}/>
@@ -62,7 +71,7 @@ function Featured() {
             marginLeft:'115px',
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
-            position:'absolute',
+            position:'relative',
             top:'0px'
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
@@ -80,7 +89,7 @@ function Featured() {
             marginLeft:'115px',
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
-            position:'absolute',
+            position:'relative',
             top:'0px'
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
@@ -102,7 +111,7 @@ function Featured() {
             marginLeft:'115px',
             backgroundColor:'#8f8f8f',
             borderRadius:'10px',
-            position:'absolute',
+            position:'relative',
             top:'0px',
           }}/>
             <Typography component="h2" variant="h5" style={{paddingTop:'20px'}}>
