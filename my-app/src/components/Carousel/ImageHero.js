@@ -39,8 +39,8 @@ const ImageHero = ({ slides }) => {
     }
 
     return (
-        <Container>
-        <Grid className='everything'>
+        <Container className='everything'>
+        <Grid>
             <div className='text-hero'>
                 <h1>The World's Most</h1>
                 {HeroData.map((header, index) => {

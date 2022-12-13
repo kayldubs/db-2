@@ -105,8 +105,6 @@
   
   /* media queries start */
   @media screen and (min-width: 320px) {
-
-    
     .content {
       font-size: 12px;
       display: flex;
@@ -145,29 +143,44 @@
     }
   }
   
-  /* @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     .text-hero {
-        margin-top: 100px;
+        margin-top: 70px;
     }
     .hero-image {
-        max-width: 450px;
-        max-height: 250px;
-        margin-top: 250px;
-        margin-bottom: 30px;
+        max-width: 650px;
+        max-height: 350px;
+        /* margin-top: 250px; */
+        /* margin-bottom: 30px; */
     }
     .content {
       width: 350px;
       max-height: 250px;
-      transform: translate(15%, -60%);
+      transform: translate(-35%, -150%);
       margin-top: 30px;
       font-size: 12px;
     }
-    
+    @keyframes slide-up {
+      0% {
+          visibility:visible;
+          top: 5rem;
+      }
+      100% {
+          visibility: visible;
+          top: 0rem;
+      }
+    }
     .top-content {
      margin-bottom: 100px;
     }
   }
-  
+  .buttons {
+    top: -200px;
+  }
+  .everything {
+    max-height: 800px;
+  }
+  /*
   @media screen and (min-width: 1024px) {
     .content {
         width: 400px;
