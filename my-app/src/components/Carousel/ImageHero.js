@@ -47,7 +47,7 @@ const ImageHero = ({ slides }) => {
                     return (
                         <div className={index === current ? 'text active' : 'text'} key={index} >
                             {index === current && (
-                                <Grid className='top-content' direction="row" item xs={12} sm={12} md={12}>
+                                <Grid className='top-content'>
                                     <h2>{header.header}</h2>
                                     <h1 className="bottom-content">Electronic Stethoscope</h1>
                                 </Grid>
@@ -68,8 +68,7 @@ const ImageHero = ({ slides }) => {
                             {index === current && (
                                 <Grid container className="hero-container">
                                     <img src={pictures.image} alt="Hero IMG" className='hero-image' />
-                                    <Grid item direction='column' 
-                                    // sm={6.5} md={5.5} lg={4} xl={4} 
+                                    <Grid item direction='column'  
                                     className='content'>
                                         <h2>{pictures.heading}</h2>
                                         <hr></hr>

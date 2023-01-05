@@ -28,21 +28,17 @@ ul {
     text-decoration: none;
     font-weight: bold;
     font-size: 36px;
+    font-family: Expletus Sans;
+    color: #000000;
 }
 
 .a {
     max-width: 2px;
 }
 
-.logo-text {
-    text-decoration: none;
-    font-family: Expletus Sans;
-    color: #000000;
-}
-
 .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(8, auto);
     grid-gap: 10px;
     text-align: center;
     width: 70vw;
@@ -122,6 +118,7 @@ ul {
         justify-content: space-evenly;
         color: #305074;
         align-items: stretch;
+        
     }
 
     .nav-links:hover {
@@ -151,5 +148,8 @@ ul {
 @media screen and (min-width: 961px) {
     .menu-icon {
         display:none;
+    }
+    .logo-text {
+        margin-left: 3rem;
     }
 }
