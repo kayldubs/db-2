@@ -36,7 +36,7 @@ function Featured() {
         setIsHovering(false);
     }
   return (
-    <Grid container spacing={{xs: 1, xl:1}} mt={{xs:'1500px'}} rowGap={{xl: 1}} className='employeeGrid' style={{
+    <Grid container spacing={{xs: 1, xl:1}} mt={{xs:'50px'}} rowGap={{xl: 1}} className='employeeGrid' style={{
         justifyContent: 'center',
         marginBottom: '200px',
         alignItems: 'stretch',

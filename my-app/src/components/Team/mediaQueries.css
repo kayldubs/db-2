@@ -1,20 +1,19 @@
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 320px) {
     .employeeGrid {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         position: relative;
         margin-top: 20px;
-        align-content: center;
+        justify-content: center;
     }
     .media1 {
-        margin-left: 135px;
-        margin-bottom: 400px;
-    }
-    .media2 {
-        margin-bottom: 400px;
+        margin-left: 65px;
+        margin-bottom: 100px;
     }
     .media3 {
-        margin-right: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 

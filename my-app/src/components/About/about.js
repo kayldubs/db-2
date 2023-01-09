@@ -71,7 +71,7 @@ export default function About() {
                         pb: 6,
                     }}
                 >
-                    <Container maxWidth="sm">
+                    <Container maxWidth="sm" justifyContent="center">
                         <Typography
                             component="h1"
                             variant="h2"

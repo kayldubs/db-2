@@ -39,13 +39,8 @@ export default function Team3() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8 }} className='employeeGrid'>
-            <Grid container spacing={{xs: 1, xl:3}} direction='column'
-            // xs={{
-            //     direction:'column',
-            //     justifyContent:'center',
-            //     alignItems:'center'
-            // }}
+        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb:6 }} className='employeeGrid'>
+            <Grid container spacing={{xs: 7, xl:3}} alignItems="center"
             >
                     <Card class='media3'>
                         <CardMedia
@@ -57,7 +52,6 @@ export default function Team3() {
                             style={{
                                 height: '400px',
                                 width:'400px',
-                                flexWrap:'nowrap'
                             }}
                         />
                         <CardContent alignItems="center">
@@ -67,7 +61,7 @@ export default function Team3() {
                             </Typography>
                             <Typography align='center'>CTO</Typography>
                             {isHovering && (
-                                <Typography style={{width:'300px', flexWrap:'nowrap', height: '0px',  marginLeft: '30px', textAlign: 'center'}} className='text'>
+                                <Typography style={{width:'300px', flexWrap:'wrap', height: '0px',  marginLeft: '30px', textAlign: 'center'}} className='text'>
                                     Karl earned his BS and ME in electrical and computer engineering followed by a Ph.D. in biomedical engineering (neural engineering focus) from the University of Florida.  Karl is well versed in the design of computer hardware, intelligent information processing, machine learning, and adaptation of neuronal networks.
                                 </Typography>
                             )} 

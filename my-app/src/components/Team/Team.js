@@ -42,7 +42,7 @@ export default function Team() {
 
     return (
         <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb: 6 }} className='employeeGrid'>
-            <Grid container spacing={{xs: 12, xl:3}} alignItems="center"
+            <Grid container spacing={{xs: 1, xl:3}} alignItems="center"
                 >
                     <Card class='media1'>
                         <CardMedia
