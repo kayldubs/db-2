@@ -31,8 +31,8 @@ export default function Team2() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb: 6 }} className='employeeGrid'>
-            <Grid container spacing={{xs: 1, xl:3}} direction='column'
+        <Container disableGutters className='employeeGrid'>
+            <Grid container sx={{ pt: 8, pb: 6, mb: 20 }} direction='column'
                 justifyContent='center'
                 alignItems='center'
             

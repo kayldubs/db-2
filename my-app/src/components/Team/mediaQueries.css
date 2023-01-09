@@ -6,22 +6,24 @@
         margin-top: 20px;
         justify-content: center;
     }
-    .media1 {
-        margin-left: 65px;
-        margin-bottom: 100px;
+    @media (hover:hover) {
+        .text {
+            visibility: visible;
+        }   
     }
-    .media3 {
-        display: flex;
-        flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .employeeGrid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        margin-top: 20px;
         justify-content: center;
     }
 }
 
-@media (hover:hover) {
-    .text {
-        visibility: visible;
-    }   
-}
+
 
 @media screen and (min-width: 1201px) {
     .flex-container {

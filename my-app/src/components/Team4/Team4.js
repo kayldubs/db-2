@@ -15,11 +15,10 @@ import '../Team/mediaQueries.css'
 const theme = createTheme({
   breakpoints: {
     values: {
-      xs: 0,
-      sm: 600,
-      md: 900,
-      lg: 1200,
-      xl: 1536,
+      xs: 310,
+      sm: 768,
+      lg: 1024,
+      xl: 1201,
     },
   },
 });
@@ -120,11 +119,11 @@ function Featured() {
             <Typography variant="subtitle1" color="text.secondary">
             Graphic Designer/Developer
             </Typography>
-            {isHovering && (
+            {/* {isHovering && (
             <Typography variant="subtitle2" color="text.secondary">
             Kaylee started in her field with an Associates degree from Miami Dade College with a focus in graphic design. Expanding her skill set she recieved her certification in full stack development from The University of Texas at Austin where she now specializes in UX/UI and front end interface development.
             </Typography>
-            )}
+            )} */}
           </CardContent>
         </Card>
     </Grid>

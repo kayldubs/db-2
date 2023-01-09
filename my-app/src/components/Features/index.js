@@ -52,7 +52,7 @@ function Features() {
             <p className='ptag'>• Collect valuable patient biometric data in a method unattainable by traditional stethoscopes.</p>
             <p className='ptag'>• Evaluate patients more quickly than ever with a clinically improved exam workflow.</p>
           </div>
-          <div className='media3' class='col-lg-6 flew-row'>
+          <div className='media3-ft' class='col-lg-6 flew-row'>
           <CardMedia
               component="img"
               alt="heart with connections to DigiBeat Logo"

@@ -39,8 +39,10 @@ export default function Team3() {
     }
 
     return (
-        <Container disableGutters maxWidth="sm" maxHeight='sm' sx={{ pt: 8, pb:6 }} className='employeeGrid'>
-            <Grid container spacing={{xs: 7, xl:3}} alignItems="center"
+        <Container disableGutters className='employeeGrid'>
+            <Grid container sx={{ pt: 8, pb: 6, mb: 20 }} direction='column'
+                justifyContent='center'
+                alignItems='center'
             >
                     <Card class='media3'>
                         <CardMedia
