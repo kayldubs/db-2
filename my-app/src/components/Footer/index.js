@@ -44,15 +44,15 @@ function Footer() {
         <Container className='footer1'>
         <div className='footer' alignContent="stretch">
         <div className='footerType'>
-          <Typography variant="body1" >
+          <Typography fontWeight='bold'>
             Contact
           </Typography>
           <Typography className=''>
               Support@digibeat.health
           </Typography>
           </div>
-          <div className='section2' style={{paddingBottom:'200px'}}>
-          <Typography variant="body1" >
+          <div className='section1'>
+          <Typography fontWeight='bold'>
             Navigation
         </Typography>
           <Link color="inherit" href="/" >
@@ -80,7 +80,7 @@ function Footer() {
           </Card> */}
       </div>
       <div className='section2'>
-      <Typography variant="body1">
+      <Typography fontWeight='bold'>
             Regulatory
         </Typography>
         <Link color="inherit" href="/">
@@ -97,7 +97,7 @@ function Footer() {
       </Link>
       </div>
       <div className='section2' style={{marginBottom:'180px'}}>
-      <Typography variant="body1">
+      <Typography fontWeight='bold'>
             Resources
         </Typography>
         <Link color="inherit" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7407266/">

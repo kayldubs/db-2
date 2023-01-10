@@ -6,11 +6,17 @@
     
 }
 
+.section1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* float:right; */
+}
+
 .section2 {
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     float:right;
 }
 
@@ -22,12 +28,12 @@
 
 /* start media quieries  */
 
-@media screen and (min-width: 320px) {
-    .footerType {
-        margin: 0px 10px 0px 10px;
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .section2 {
-        margin-bottom: 400px;  
-        margin-left: 10px;
+    .section2, .section1 {
+        margin-bottom: 10px;
     }
 }

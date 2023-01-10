@@ -80,6 +80,7 @@ ul {
     cursor: pointer;
     height: 35px;
     width: 75px;
+    padding: 10px;
   }
   .nav-links {
     font-size: 1.5rem;
