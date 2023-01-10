@@ -25,14 +25,12 @@
 
 
 
-@media screen and (min-width: 1201px) {
-    .flex-container {
-        align-content: center;
-        flex-direction: column;
-    }
-    .employeeGrid {
-        align-content: center;
+@media screen and (min-width: 1024px) {
+    .topEmpGrid {
         flex-direction: row;
+    }
+    media1 {
+        justify-content: left;
     }
 }
 

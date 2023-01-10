@@ -31,7 +31,7 @@ export default function Team2() {
     }
 
     return (
-        <Container disableGutters className='employeeGrid'>
+        <Container disableGutters className='topEmpGrid'>
             <Grid container sx={{ pt: 8, pb: 6, mb: 20 }} direction='column'
                 justifyContent='center'
                 alignItems='center'

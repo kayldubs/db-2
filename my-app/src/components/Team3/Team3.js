@@ -16,13 +16,22 @@ import Container from '@mui/material/Container';
 import { useState } from 'react';
 //import animation framework 
 //import { motion } from "framer-motion";
-
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 
 // import images
 import karll from '../../assests/imgs/karl.svg';
 
-//import karll from '../../assests/imgs/karl.svg';
+const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 310,
+        sm: 768,
+        lg: 1024,
+        xl: 1201,
+      },
+    },
+  });
 
 export default function Team3() {
     const [isHovering, setIsHovering] = useState(false);
@@ -39,8 +48,8 @@ export default function Team3() {
     }
 
     return (
-        <Container disableGutters className='employeeGrid'>
-            <Grid container sx={{ pt: 8, pb: 6, mb: 20 }} direction='column'
+        <Container disableGutters className='topEmpGrid'>
+            <Grid container sx={{ pt: 8, pb: 6, mb: 20 }} flexDirection={{xs: 'column', sm: 'column', lg: 'row' }} 
                 justifyContent='center'
                 alignItems='center'
             >
