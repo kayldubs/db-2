@@ -67,8 +67,8 @@ export default function About() {
                 <Box
                     sx={{
                         bgcolor: 'background.paper',
-                        pt: 8,
-                        pb: 6,
+                        pt: 0,
+                        pb: 0,
                     }}
                 >
                     <Container maxWidth="sm" justifyContent="center">

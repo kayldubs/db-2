@@ -25,17 +25,17 @@ const theme = createTheme({
 
 
 function Featured() {
-  const [isHovering, setIsHovering] = useState(false);
+  // const [isHovering, setIsHovering] = useState(false);
 
-    const handleMouseOver = () => {
-        setIsHovering(true);
+  //   const handleMouseOver = () => {
+  //       setIsHovering(true);
 
-    }
-    const handleMouseOut = () => {
-        setIsHovering(false);
-    }
+  //   }
+  //   const handleMouseOut = () => {
+  //       setIsHovering(false);
+  //   }
   return (
-    <Grid container spacing={{xs: 1, xl:1}} mt={{xs:'50px'}} rowGap={{xl: 1}} className='employeeGrid' style={{
+    <Grid container spacing={{xs: 1, xl:1}} mt={{xs:''}} rowGap={{xl: 1}} className='employeeGrid' style={{
         justifyContent: 'center',
         marginBottom: '200px',
         alignItems: 'stretch',
@@ -100,8 +100,8 @@ function Featured() {
             </CardContent>
             </Card>
         <Card 
-            onMouseOver={handleMouseOver}
-            onMouseOut={handleMouseOut}
+            // onMouseOver={handleMouseOver}
+            // onMouseOut={handleMouseOut}
             sx={{ display: 'flex', outline:'solid', outlineColor:'#8f8f8f' }}
             style={{margin: '20px'}}>
         <CardContent sx={{ flex: 1 }} style={{backgroundColor:'#d6d6d6', width:'300px'}}>

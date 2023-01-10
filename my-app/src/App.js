@@ -17,8 +17,6 @@ import About from './components/About/about';
 // import Physician from './components/Physician';
 import Footer from './components/Footer';
 import Team from './components/Team/Team';
-import Team2 from './components/Team2/Team2.js';
-import Team3 from './components/Team3/Team3.js';
 import Team4 from './components/Team4/Team4';
 
 //import CSS Boostrap 
@@ -102,8 +100,6 @@ const [currentCategory, setCurrentCategory] = useState(categories[0]);
             <Route exact path="/faq"> <Faq/> </Route>
             <Route exact path="/about"> <About/>
             <Team />
-            <Team2 />
-            <Team3 />
             <Team4 />
             </Route>
             </Switch>
