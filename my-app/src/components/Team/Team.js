@@ -92,7 +92,7 @@ export default function Team() {
                             </Typography>
                             <Typography align='center'>CMO</Typography>
                             {isHovering && (
-                                <Typography style={{width:'250px', flexWrap:'nowrap', height: '0px', textAlign: 'center' }} className='text'>
+                                <Typography style={{width:'250px', flexWrap:'nowrap', height: '0px', textAlign: 'center', marginLeft:'10px'}} className='text'>
                                     Trauma Surgeon located in the North Central Florida area with a background in medicine and applied mathematics. As the founder and CEO, Winston has seen through the development of the Digibeat Electronic Stethoscope from its original prototype developed in Winston’s garage.
                                 </Typography>
                             )}
@@ -119,7 +119,7 @@ export default function Team() {
                             </Typography>
                             <Typography align='center'>CEO</Typography>
                             {isHovering && (
-                                <Typography style={{width:'250px', flexWrap:'nowrap', height: '0px', textAlign: 'center'}} className='text'>
+                                <Typography style={{width:'250px', flexWrap:'nowrap', height: '0px', textAlign: 'center', marginLeft:'10px'}} className='text'>
                                     Cliff has a background in Aeronautical, Aerospace and Astronautical Engineering from Embry-Riddle Aeronautical University. He focuses on project organization while being the brains behind the engineering that goes into developing the Digibeat Electronic Stethoscope.
                                         </Typography>
                                         )}
@@ -145,7 +145,7 @@ export default function Team() {
                             </Typography>
                             <Typography align='center'>CTO</Typography>
                             {isHovering && (
-                                <Typography style={{width:'250px', flexWrap:'wrap', height: '0px', textAlign: 'center'}} className='text'>
+                                <Typography style={{width:'250px', flexWrap:'wrap', height: '0px', textAlign: 'center', marginLeft:'10px'}} className='text'>
                                     Karl earned his BS and ME in electrical and computer engineering followed by a Ph.D. in biomedical engineering (neural engineering focus) from the University of Florida.  Karl is well versed in the design of computer hardware, intelligent information processing, machine learning, and adaptation of neuronal networks.
                                 </Typography>
                             )} 
