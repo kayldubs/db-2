@@ -44,7 +44,7 @@ function Footer() {
         <Container className='footer1'>
         <div className='footer' alignContent="stretch">
         <div className='footerType'>
-          <Typography variant="body1">
+          <Typography variant="body1" >
             Contact
           </Typography>
           <Typography className=''>
@@ -79,7 +79,7 @@ function Footer() {
               />
           </Card> */}
       </div>
-      <div className='section2'style={{paddingBottom:'180px'}}>
+      <div className='section2'>
       <Typography variant="body1">
             Regulatory
         </Typography>
