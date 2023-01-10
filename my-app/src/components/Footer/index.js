@@ -42,7 +42,7 @@ function Footer() {
         }}
       >
         <Container className='footer1'>
-        <div className='footer'>
+        <div className='footer' alignContent="stretch">
         <div className='footerType'>
           <Typography variant="body1">
             Contact
@@ -66,7 +66,7 @@ function Footer() {
       </Link>
       </div>
       <div className='footerType'>
-          <Card>
+          {/* <Card>
               <CardMedia
               sx={{
                 '& .MuiCard-root': {
@@ -77,7 +77,7 @@ function Footer() {
               component='logo'
               alt='DigiBeat logo'
               />
-          </Card>
+          </Card> */}
       </div>
       <div className='section2'style={{paddingBottom:'180px'}}>
       <Typography variant="body1">
@@ -96,7 +96,7 @@ function Footer() {
         FICO Policy
       </Link>
       </div>
-      <div className='section2' style={{marginBottom:'10px'}}>
+      <div className='section2' style={{marginBottom:'180px'}}>
       <Typography variant="body1">
             Resources
         </Typography>

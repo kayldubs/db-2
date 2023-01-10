@@ -10,7 +10,7 @@
     font-family: 'Source Sans Pro', sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     float:right;
 }
 
@@ -22,11 +22,17 @@
 
 /* start media quieries  */
 
-@media screen and (min-width: 320px) {
+/* @media screen and (min-width: 320px) {
     .footerType {
         margin: 0px 10px 0px 0px;
     }
     .section2 {
-        margin: 0px 10px 0px 0px;  
+        margin-bottom: 400px;  
     }
 }
+
+@media screen and (min-width: 550px) {
+    .section2 {
+        margin-bottom: 0px 10px 300px 0px;  
+    }
+} */
