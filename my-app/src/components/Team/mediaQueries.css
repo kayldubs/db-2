@@ -1,3 +1,15 @@
+@media (hover:none) {
+    .text {
+        visibility: visible;
+    }   
+}
+
+@media (hover:hover) {
+    .text {
+        visibility: visible;
+    }
+}
+
 @media screen and (min-width: 320px) {
     .employeeGrid {
         display: grid;
@@ -5,11 +17,6 @@
         position: relative;
         margin-top: 20px;
         justify-content: center;
-    }
-    @media (hover:hover) {
-        .text {
-            visibility: visible;
-        }   
     }
 }
 
