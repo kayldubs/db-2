@@ -41,13 +41,9 @@
     margin: auto;
     font-size: 18px;
   }
-
- /* start media queries */
- /* @media screen and (max-width: 480px) {
-   .slider {
-    width: 400px;
-   }
- } */
+  .featureSub .h2 {
+    font-weight: bold;
+  }
 
 
  @media screen and (min-width: 320px) {
@@ -72,6 +68,8 @@
   .info-plane {
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
  }
 

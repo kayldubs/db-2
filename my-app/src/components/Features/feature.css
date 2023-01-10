@@ -139,12 +139,12 @@ padding-bottom: 2rem;
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 786px) {
 .imageDecoration {
   margin: auto;
 }
-.media .media2 {
-  margin: 50px;
+.imageDecoration {
+  margin-bottom: 4rem;
 }
 }
 
