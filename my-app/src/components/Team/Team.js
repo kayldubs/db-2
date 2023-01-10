@@ -36,6 +36,20 @@ const theme = createTheme({
     },
   });
 
+// const index = [
+//     {
+//         id: 1,
+//         image: {winston},
+//     },
+//     {
+//         id: 2,
+//         image:{cliff},
+//     },
+//     {
+//         id: 3,
+//         image:{karll}
+//     },
+// ]
 
 export default function Team() {
     const [isHovering, setIsHovering] = useState(false);
