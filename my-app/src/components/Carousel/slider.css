@@ -22,8 +22,7 @@
         visibility: visible;
         top: 20rem;
         left: 1rem;
-    }
-    
+    }  
   }
   .content > * {
     color: #486290;
@@ -42,11 +41,11 @@
     width: 40%;
   }
   /** top text edit**/
-  .top-content {
-    font-weight: bolder;
-    font-size: 48px;
+  .top-content, .h1 {
+    font-weight: bold;
+    font-family: Source Sans Pro;
+    font-size: 36px;
     color: #27AAE1;
-    margin: 1rem;
     animation: fadeIn 2s; 
   }
   @keyframes fadeIn {
@@ -60,16 +59,14 @@
 
   .bottom-content {
     color: #000000;
-    margin-bottom: 50px;
   }
 
   .text-hero {
     text-align: center;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight:bolder;
-    font-size: 16px;
-    padding: 3rem;
-    margin-bottom: 0px;
+    margin-top: 50px;
+    max-height: 130px;
   }
   .hero-image {
     width: 1400px;
@@ -98,9 +95,6 @@
   }
   .tag {
       text-align: left;
-      padding: none;
-      margin-left: 0;
-      margin-right: 0;
   }
   
   /* media queries start */
@@ -132,20 +126,18 @@
       max-height: 200px;
       margin-bottom: 30px;
   }
-    .text-hero {
-      margin-bottom: 20px;
-      margin-top: 50px;
-      max-height: 200px;
-    }
     .buttons {
      margin-top: 0px;
     }
-    
+    .text-hero {
+      margin-top: 130px;
+    }
   }
   
   @media screen and (min-width: 768px) {
     .text-hero {
-        margin-top: 70px;
+        margin-top: 110px;
+        max-height: 130px;
     }
     .hero-image {
         max-width: 650px;
@@ -168,52 +160,65 @@
           top: 0rem;
       }
     }
-    .top-content {
-     margin-bottom: 100px;
-    }
   
   .buttons {
-    margin-top: -200px;
+    margin-top: -230px;
   }
   .everything {
-    height: 750px;
+    height: 650px;
   }
 }
   
   @media screen and (min-width: 1024px) {
       .hero-image {
-        max-width: 800px;
-        max-height: 400px;
+        min-width: 900px;
+        min-height: 450px;
         margin-top: 50px;
       }
       .content {
         max-width: 500px;
-        max-height: 280px;
-        transform: translate(-55%, -150%);
+        max-height: 300px;
+        transform: translate(-75%, -150%);
         margin-top: 30px;
         margin-bottom: 60px;
         font-size: 12px;
       }
       .buttons {
-        margin-top: -240px;
+        margin-top: -250px;
+      }
+      .blueText {
+        font-weight: bold;
+        font-family: Source Sans Pro;
+        font-size: xx-large;
+        color: #27AAE1;
+        animation: fadeIn 2s; 
+      }
+      .tag {
+        font-size: 16px;
+      }
+      .everything {
+        height: 800px;
       }
   }
 
 @media screen and (min-width: 1201px) {
   .hero-image {
     max-width: 1100px;
-    max-height: 600px;
+    max-height: 550px;
   }
   .everything {
-    height: 1100px;
+    height: 900px;
   }
   .content {
-    transform: translate(-100%, -210%);
+    transform: translate(-100%, -145%);
     max-width: 750px;
-    max-height: 300px;
+    max-height: 400px;
+  }
+  .tag {
+    font-size: 18px;
   }
   .buttons {
-    margin-top: -200px;
+    margin-top: -235px;
   }
 } 
 

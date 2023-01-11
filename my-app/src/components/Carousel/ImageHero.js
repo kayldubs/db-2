@@ -4,7 +4,7 @@ import { BsDashLg } from 'react-icons/bs';
 import './slider.css';
 import { Container } from '@mui/system';
 import Grid from '@mui/material/Grid';
-
+import Typography from '@mui/material/Typography';
 
 
 const ImageHero = ({ slides }) => {
@@ -42,14 +42,14 @@ const ImageHero = ({ slides }) => {
         <Container className='everything'>
         <Grid>
             <div className='text-hero'>
-                <h1>The World's Most</h1>
+                <h2>The World's Most</h2>
                 {HeroData.map((header, index) => {
                     return (
                         <div className={index === current ? 'text active' : 'text'} key={index} >
                             {index === current && (
                                 <Grid className='top-content'>
-                                    <h2>{header.header}</h2>
-                                    <h1 className="bottom-content">Electronic Stethoscope</h1>
+                                    <h1>{header.header}</h1>
+                                    <h2 className="bottom-content">Electronic Stethoscope</h2>
                                 </Grid>
                             )}
                         </div>

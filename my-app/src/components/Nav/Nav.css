@@ -67,7 +67,7 @@ ul {
   .menu-icon {
     display: block;
     position: absolute;
-    top: 40%;
+    top: 20%;
     right: 0;
     font-size: 1.8rem;
     cursor: pointer;
@@ -138,7 +138,7 @@ ul {
   .menu-icon {
     display: block;
     position: absolute;
-    top: 20%;
+    top: 16%;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
@@ -152,6 +152,7 @@ ul {
   }
   .logo-text {
     margin-left: 3rem;
+    font-size: 46px;
   }
   .navbar-logo {
       width: 300px;

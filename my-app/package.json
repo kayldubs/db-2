@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.2",
+    "@emailjs/browser": "^3.10.0",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fontsource/expletus-sans": "^4.5.8",
@@ -41,11 +42,11 @@
     "react-utils-helper": "^0.1.4",
     "redux": "^4.1.2",
     "usehooks-ts": "^2.6.0",
+    "useref": "^1.4.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "run": "react-scripts start",
-    "start":"node server/server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
